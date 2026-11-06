@@ -30,8 +30,7 @@ Each file holds one clean track in race order, with elevation from USGS 3DEP and
 4. It adds USGS 3DEP elevation every 20 m.
    The 3DEP model is bare earth, so a bridge reads as the river below it; the crawler levels bridges and tunnels that OpenStreetMap shows on the course.
 5. It publishes a course when the length is within 8% of the race distance; `length_error_pct` says by how much it differs.
-6. Every Monday a machine on a university network runs the crawl and commits only what changed.
-   Many organizer sites block the IP ranges of cloud services such as GitHub Actions, so the crawl does not run there; `deploy/` has the setup.
+6. A GitHub Action runs every Monday and commits only what changed.
 
 The crawler sends the user agent `race-courses-bot`, obeys robots.txt, and waits 2 seconds between requests to the same site.
 It does not use Strava, and it skips sites such as RideWithGPS whose robots.txt disallows route exports.
