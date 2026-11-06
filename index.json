@@ -30,7 +30,7 @@
   "distance_m": 5000.0,
   "finishers": 1886,
   "finishers_year": 2025,
-  "page": "https://skinnyraven.com/",
+  "page": "https://skinnyraven.com/events/turkey-trot/",
   "status": "ok",
   "detail": "mymaps map",
   "file": "courses/ak/skinny-raven-turkey-trot/5k.gpx",
@@ -176,8 +176,8 @@
   "finishers": 20762,
   "finishers_year": 2025,
   "page": "https://pattillmanfoundation.org/pats-run/",
-  "status": "error",
-  "detail": "HTTP 403: https://pattillmanfoundation.org/pats-run/"
+  "status": "no-source",
+  "detail": "no course map on https://pattillmanfoundation.org/pats-run/"
  },
  {
   "race": "phoenix-marathon",
@@ -227,9 +227,14 @@
   "distance_m": 10000.0,
   "finishers": 1611,
   "finishers_year": 2024,
-  "page": "https://berkeleyhalfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://berkeleyhalfmarathon.com/the-races/half-marathon/; HTTP 403: https://berkeleyhalfmarathon.com/; HTTP 403: https://berkeleyhalfmarathon.com/the-races/berkeley-half-10k-race/"
+  "page": "https://berkeleyhalfmarathon.com/the-races/berkeley-half-10k-race/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image, pdf",
+  "found": [
+   "googlemaps",
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "berkeley-half-marathon",
@@ -242,9 +247,14 @@
   "distance_m": 5000.0,
   "finishers": 1548,
   "finishers_year": 2024,
-  "page": "https://berkeleyhalfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://berkeleyhalfmarathon.com/the-races/half-marathon/; HTTP 403: https://berkeleyhalfmarathon.com/; HTTP 403: https://berkeleyhalfmarathon.com/the-races/berkeley-half-10k-race/; HTTP 403: https://berkeleyhalfmarathon.com/the-races/5-k/"
+  "page": "https://berkeleyhalfmarathon.com/the-races/5-k/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image, pdf",
+  "found": [
+   "googlemaps",
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "berkeley-half-marathon",
@@ -257,9 +267,13 @@
   "distance_m": 21097.0,
   "finishers": 2725,
   "finishers_year": 2024,
-  "page": "https://berkeleyhalfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://berkeleyhalfmarathon.com/the-races/half-marathon/; HTTP 403: https://berkeleyhalfmarathon.com/"
+  "page": "https://berkeleyhalfmarathon.com/the-races/half-marathon/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "big-sur-international-marathon",
@@ -339,8 +353,12 @@
   "finishers": 1572,
   "finishers_year": 2026,
   "page": "https://inmotionevents.com/event/carlsbad-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://inmotionevents.com/event/carlsbad-marathon/"
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "carlsbad-marathon",
@@ -354,8 +372,12 @@
   "finishers": 4044,
   "finishers_year": 2026,
   "page": "https://inmotionevents.com/event/carlsbad-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://inmotionevents.com/event/carlsbad-marathon/"
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "carlsbad-marathon",
@@ -369,8 +391,12 @@
   "finishers": 1186,
   "finishers_year": 2026,
   "page": "https://inmotionevents.com/event/carlsbad-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://inmotionevents.com/event/carlsbad-marathon/"
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "dana-point-turkey-trot",
@@ -538,9 +564,13 @@
   "distance_m": 5000.0,
   "finishers": 6221,
   "finishers_year": 2025,
-  "page": "https://www.mccourtfoundation.org/event/los-angeles-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/; HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/"
+  "page": "https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "los-angeles-marathon",
@@ -553,9 +583,13 @@
   "distance_m": 42195.0,
   "finishers": 21467,
   "finishers_year": 2025,
-  "page": "https://www.mccourtfoundation.org/event/los-angeles-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/; HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/"
+  "page": "https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "monterey-bay-half-marathon",
@@ -623,9 +657,14 @@
   "distance_m": 10000.0,
   "finishers": 1937,
   "finishers_year": 2025,
-  "page": "https://www.oaklandmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://oaklandmarathon.com/races/half/; HTTP 403: https://www.oaklandmarathon.com/; HTTP 403: https://oaklandmarathon.com/races/5k/; HTTP 403: https://oaklandmarathon.com/races/10k/"
+  "page": "https://oaklandmarathon.com/races/10k/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun, pdf",
+  "found": [
+   "image",
+   "mapmyrun",
+   "pdf"
+  ]
  },
  {
   "race": "oakland-marathon",
@@ -638,9 +677,14 @@
   "distance_m": 5000.0,
   "finishers": 2465,
   "finishers_year": 2025,
-  "page": "https://www.oaklandmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://oaklandmarathon.com/races/half/; HTTP 403: https://www.oaklandmarathon.com/; HTTP 403: https://oaklandmarathon.com/races/5k/"
+  "page": "https://oaklandmarathon.com/races/5k/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun, pdf",
+  "found": [
+   "image",
+   "mapmyrun",
+   "pdf"
+  ]
  },
  {
   "race": "oakland-marathon",
@@ -653,9 +697,14 @@
   "distance_m": 21097.0,
   "finishers": 2663,
   "finishers_year": 2025,
-  "page": "https://www.oaklandmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://oaklandmarathon.com/races/half/; HTTP 403: https://www.oaklandmarathon.com/"
+  "page": "https://oaklandmarathon.com/races/half/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun, pdf",
+  "found": [
+   "image",
+   "mapmyrun",
+   "pdf"
+  ]
  },
  {
   "race": "oc-marathon",
@@ -732,8 +781,13 @@
   "finishers": 7787,
   "finishers_year": 2025,
   "page": "https://www.sandiegorunningco.com/sdrc_events/oside-turkey-trot/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.sandiegorunningco.com/sdrc_events/oside-turkey-trot/"
+  "status": "unsupported",
+  "detail": "only googlemaps, image, mapmyrun",
+  "found": [
+   "googlemaps",
+   "image",
+   "mapmyrun"
+  ]
  },
  {
   "race": "rock-n-roll-san-diego",
@@ -784,9 +838,13 @@
   "distance_m": 21097.0,
   "finishers": 5336,
   "finishers_year": 2025,
-  "page": "https://www.mccourtfoundation.org/event/rose-bowl-half-5k/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.mccourtfoundation.org/event/rose-bowl-half-5k/course/; HTTP 403: https://www.mccourtfoundation.org/event/rose-bowl-half-5k/"
+  "page": "https://www.mccourtfoundation.org/event/rose-bowl-half-5k/course/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "run-to-feed-the-hungry",
@@ -835,9 +893,13 @@
   "distance_m": 10000.0,
   "finishers": 3974,
   "finishers_year": 2025,
-  "page": "https://www.thesfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/"
+  "page": "https://www.thesfmarathon.com/10k/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image",
+  "found": [
+   "googlemaps",
+   "image"
+  ]
  },
  {
   "race": "san-francisco-marathon",
@@ -850,9 +912,14 @@
   "distance_m": 21097.0,
   "finishers": 7100,
   "finishers_year": 2025,
-  "page": "https://www.thesfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/"
+  "page": "https://www.thesfmarathon.com/1st-half-marathon/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image, pdf",
+  "found": [
+   "googlemaps",
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "san-francisco-marathon",
@@ -865,9 +932,13 @@
   "distance_m": 21097.0,
   "finishers": 3608,
   "finishers_year": 2025,
-  "page": "https://www.thesfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/; HTTP 403: https://www.thesfmarathon.com/2nd-half-marathon/"
+  "page": "https://www.thesfmarathon.com/2nd-half-marathon/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image",
+  "found": [
+   "googlemaps",
+   "image"
+  ]
  },
  {
   "race": "san-francisco-marathon",
@@ -880,9 +951,13 @@
   "distance_m": 42195.0,
   "finishers": 6545,
   "finishers_year": 2025,
-  "page": "https://www.thesfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/"
+  "page": "https://www.thesfmarathon.com/full-marathon/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image",
+  "found": [
+   "googlemaps",
+   "image"
+  ]
  },
  {
   "race": "san-francisco-marathon",
@@ -895,9 +970,14 @@
   "distance_m": 5000.0,
   "finishers": 1709,
   "finishers_year": 2025,
-  "page": "https://www.thesfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/; HTTP 403: https://www.thesfmarathon.com/2nd-half-marathon/; HTTP 403: https://www.thesfmarathon.com/5k-races-overview/"
+  "page": "https://www.thesfmarathon.com/5k-races-overview/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image, pdf",
+  "found": [
+   "googlemaps",
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "san-francisco-marathon",
@@ -910,9 +990,14 @@
   "distance_m": 5000.0,
   "finishers": 1639,
   "finishers_year": 2025,
-  "page": "https://www.thesfmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/; HTTP 403: https://www.thesfmarathon.com/2nd-half-marathon/; HTTP 403: https://www.thesfmarathon.com/5k-races-overview/"
+  "page": "https://www.thesfmarathon.com/5k-races-overview/",
+  "status": "unsupported",
+  "detail": "only googlemaps, image, pdf",
+  "found": [
+   "googlemaps",
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "shamrockn-half-marathon",
@@ -982,9 +1067,12 @@
   "distance_m": 10000.0,
   "finishers": 5030,
   "finishers_year": 2025,
-  "page": "https://www.svturkeytrot.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.svturkeytrot.com/course-map/; HTTP 403: https://www.svturkeytrot.com/"
+  "page": "https://www.svturkeytrot.com/course-map/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "silicon-valley-turkey-trot",
@@ -997,9 +1085,12 @@
   "distance_m": 5000.0,
   "finishers": 12804,
   "finishers_year": 2025,
-  "page": "https://www.svturkeytrot.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.svturkeytrot.com/course-map/; HTTP 403: https://www.svturkeytrot.com/"
+  "page": "https://www.svturkeytrot.com/course-map/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "silver-strand-half-marathon",
@@ -2073,9 +2164,13 @@
   "distance_m": 21097.0,
   "finishers": 2674,
   "finishers_year": 2025,
-  "page": "https://athhalf.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://athhalf.com/athhalf/; HTTP 403: https://athhalf.com/"
+  "page": "https://athhalf.com/athhalf/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "peachtree-road-race",
@@ -2284,9 +2379,13 @@
   "distance_m": 21097.0,
   "finishers": 1591,
   "finishers_year": 2025,
-  "page": "https://thekauaimarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://thekauaimarathon.com/the-race/the-course/; HTTP 403: https://thekauaimarathon.com/"
+  "page": "https://thekauaimarathon.com/the-race/the-course/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun",
+  "found": [
+   "image",
+   "mapmyrun"
+  ]
  },
  {
   "race": "bix-7",
@@ -2299,9 +2398,12 @@
   "distance_m": 11265.0,
   "finishers": 7912,
   "finishers_year": 2025,
-  "page": "https://bix7.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://bix7.com/course-map/; HTTP 403: https://bix7.com/"
+  "page": "https://bix7.com/course-map/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "chicago-13-1",
@@ -2407,24 +2509,24 @@
   "distance_m": 5000.0,
   "finishers": 22973,
   "finishers_year": 2025,
-  "page": "https://hotchocolate15k.com/",
-  "status": "stale",
-  "detail": "HTTP 403: https://hotchocolate15k.com/city/chicago/; HTTP 403: https://hotchocolate15k.com/ (kept the course read 2026-11-06)",
+  "page": "https://hotchocolate15k.com/city/chicago/",
+  "status": "warn",
+  "detail": "length 5.28 km is +5.6% off target",
   "file": "courses/il/hot-chocolate-chicago/5k.gpx",
   "source": {
    "kind": "mymaps",
    "url": "https://www.google.com/maps/d/kml?mid=1glyouR_a0aGE7ni0lMwwSAOiaJnRNnA&forcekml=1",
    "page": "https://hotchocolate15k.com/city/chicago/"
   },
-  "retrieved": "2026-11-06",
   "length_m": 5280.9,
   "length_error_pct": 5.62,
-  "ascent_m": 15.6,
-  "descent_m": 15.4,
   "method": "line",
   "oriented_by": "markers",
   "geometry_sha256": "df6c04fb73db8e38dee318f0f8e44b2fb2f89a225516e25e1696733fdf61a841",
-  "pipeline": 2
+  "pipeline": 2,
+  "retrieved": "2026-11-06",
+  "ascent_m": 15.6,
+  "descent_m": 15.4
  },
  {
   "race": "illinois-marathon",
@@ -2658,9 +2760,13 @@
   "distance_m": 42195.0,
   "finishers": 1332,
   "finishers_year": 2025,
-  "page": "https://derbyfestivalmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://derbyfestivalmarathon.com/course-details/; HTTP 403: https://derbyfestivalmarathon.com/"
+  "page": "https://derbyfestivalmarathon.com/course-details/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "kentucky-derby-festival-marathon",
@@ -2673,9 +2779,13 @@
   "distance_m": 21097.0,
   "finishers": 6302,
   "finishers_year": 2025,
-  "page": "https://derbyfestivalmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://derbyfestivalmarathon.com/course-details/; HTTP 403: https://derbyfestivalmarathon.com/"
+  "page": "https://derbyfestivalmarathon.com/course-details/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "louisville-hungry-turkey",
@@ -2751,9 +2861,12 @@
   "distance_m": 10000.0,
   "finishers": 16395,
   "finishers_year": 2025,
-  "page": "https://ccc10k.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://ccc10k.com/ccc10k/; HTTP 403: https://ccc10k.com/"
+  "page": "https://ccc10k.com/ccc10k/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "louisiana-marathon",
@@ -3059,24 +3172,24 @@
   "distance_m": 11265.0,
   "finishers": 10783,
   "finishers_year": 2025,
-  "page": "https://www.falmouthroadrace.com/",
-  "status": "warn",
-  "detail": "joined from 23 of 26 pieces of the map; check that it is the right course",
+  "page": "https://falmouthroadrace.com/events/asics-falmouth-road-race/asics-falmouth-road-race-course-map/",
+  "status": "ok",
+  "detail": "mymaps map",
   "file": "courses/ma/falmouth-road-race/7-miles.gpx",
   "source": {
-   "kind": "osm",
-   "url": "https://www.openstreetmap.org/relation/19472605",
-   "page": "races.yaml"
+   "kind": "mymaps",
+   "url": "https://www.google.com/maps/d/kml?mid=1JG9QgGTPVZKWxJIDgK_fuMzP9ePQlqE&forcekml=1",
+   "page": "https://falmouthroadrace.com/events/asics-falmouth-road-race/asics-falmouth-road-race-course-map/"
   },
-  "length_m": 11258.3,
-  "length_error_pct": -0.06,
-  "method": "chain:23/26",
-  "oriented_by": "as-drawn",
-  "geometry_sha256": "16c9753c0ea9359e5f90b314b2fe5bb44ea536e98ba8a9607d4fda6b18e7a461",
+  "length_m": 11328.8,
+  "length_error_pct": 0.57,
+  "method": "line",
+  "oriented_by": "markers",
+  "geometry_sha256": "a63a3e43001f409138cd107df49156bb39b0f4994be873b9f9e426abb9b30cd5",
   "pipeline": 2,
   "retrieved": "2026-11-06",
-  "ascent_m": 74.4,
-  "descent_m": 75.1
+  "ascent_m": 81.3,
+  "descent_m": 80.3
  },
  {
   "race": "harborside-half-marathon",
@@ -3372,8 +3485,8 @@
   "finishers": 2489,
   "finishers_year": 2025,
   "page": "https://www.mainecoastmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.mainecoastmarathon.com/"
+  "status": "no-source",
+  "detail": "no course map on https://www.mainecoastmarathon.com/"
  },
  {
   "race": "maine-marathon",
@@ -3386,9 +3499,14 @@
   "distance_m": 21097.0,
   "finishers": 2365,
   "finishers_year": 2025,
-  "page": "https://mainemarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://mainemarathon.com/races/marathon/; HTTP 403: https://mainemarathon.com/; HTTP 403: https://mainemarathon.com/races/half-marathon/"
+  "page": "https://mainemarathon.com/races/half-marathon/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun, pdf",
+  "found": [
+   "image",
+   "mapmyrun",
+   "pdf"
+  ]
  },
  {
   "race": "maine-marathon",
@@ -3401,9 +3519,14 @@
   "distance_m": 42195.0,
   "finishers": 1176,
   "finishers_year": 2025,
-  "page": "https://mainemarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://mainemarathon.com/races/marathon/; HTTP 403: https://mainemarathon.com/"
+  "page": "https://mainemarathon.com/races/marathon/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun, pdf",
+  "found": [
+   "image",
+   "mapmyrun",
+   "pdf"
+  ]
  },
  {
   "race": "millinocket-marathon",
@@ -3552,24 +3675,24 @@
   "distance_m": 21097.0,
   "finishers": 10658,
   "finishers_year": 2025,
-  "page": "https://www.freepmarathon.com/",
-  "status": "stale",
-  "detail": "HTTP 403: https://www.freepmarathon.com/course-maps/; HTTP 403: https://www.freepmarathon.com/ (kept the course read 2026-11-06)",
+  "page": "https://www.freepmarathon.com/course-maps/",
+  "status": "ok",
+  "detail": "mymaps map",
   "file": "courses/mi/detroit-free-press-marathon/half-marathon.gpx",
   "source": {
    "kind": "mymaps",
    "url": "https://www.google.com/maps/d/kml?mid=1n5VBOdxKCs5tDMBZmLCLBW_zaS0TSYs&forcekml=1",
    "page": "https://www.freepmarathon.com/course-maps/"
   },
-  "retrieved": "2026-11-06",
   "length_m": 21286.7,
   "length_error_pct": 0.9,
-  "ascent_m": 34.5,
-  "descent_m": 36.4,
   "method": "line",
   "oriented_by": "markers",
   "geometry_sha256": "4d9da2616cf6b2a979f5959f22f79bb27bd71aac8d2f83c9193a3a806035d10c",
-  "pipeline": 2
+  "pipeline": 2,
+  "retrieved": "2026-11-06",
+  "ascent_m": 34.5,
+  "descent_m": 36.4
  },
  {
   "race": "detroit-free-press-marathon",
@@ -3582,24 +3705,24 @@
   "distance_m": 42195.0,
   "finishers": 3569,
   "finishers_year": 2025,
-  "page": "https://www.freepmarathon.com/",
-  "status": "stale",
-  "detail": "HTTP 403: https://www.freepmarathon.com/course-maps/; HTTP 403: https://www.freepmarathon.com/ (kept the course read 2026-11-06)",
+  "page": "https://www.freepmarathon.com/course-maps/",
+  "status": "ok",
+  "detail": "mymaps map",
   "file": "courses/mi/detroit-free-press-marathon/marathon.gpx",
   "source": {
    "kind": "mymaps",
    "url": "https://www.google.com/maps/d/kml?mid=1n5VBOdxKCs5tDMBZmLCLBW_zaS0TSYs&forcekml=1",
    "page": "https://www.freepmarathon.com/course-maps/"
   },
-  "retrieved": "2026-11-06",
   "length_m": 42486.8,
   "length_error_pct": 0.69,
-  "ascent_m": 70.6,
-  "descent_m": 72.4,
   "method": "line",
   "oriented_by": "markers",
   "geometry_sha256": "c8d00628cc803e4cdf0d70d9968186c0348823bdb3350e0ee2c963df14a9c4a0",
-  "pipeline": 2
+  "pipeline": 2,
+  "retrieved": "2026-11-06",
+  "ascent_m": 70.6,
+  "descent_m": 72.4
  },
  {
   "race": "detroit-turkey-trot",
@@ -3612,9 +3735,13 @@
   "distance_m": 10000.0,
   "finishers": 3550,
   "finishers_year": 2025,
-  "page": "https://theparade.org/turkeytrot/",
-  "status": "error",
-  "detail": "HTTP 403: https://theparade.org/turkeytrot/general-info/course-maps/; HTTP 403: https://theparade.org/turkeytrot/"
+  "page": "https://theparade.org/turkeytrot/general-info/course-maps/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "detroit-turkey-trot",
@@ -3627,9 +3754,13 @@
   "distance_m": 5000.0,
   "finishers": 9860,
   "finishers_year": 2025,
-  "page": "https://theparade.org/turkeytrot/",
-  "status": "error",
-  "detail": "HTTP 403: https://theparade.org/turkeytrot/general-info/course-maps/; HTTP 403: https://theparade.org/turkeytrot/"
+  "page": "https://theparade.org/turkeytrot/general-info/course-maps/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "grand-rapids-marathon",
@@ -3810,9 +3941,13 @@
   "distance_m": 21097.0,
   "finishers": 8250,
   "finishers_year": 2025,
-  "page": "https://grandmasmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://grandmasmarathon.com/the-marathon/grandmas-marathon/; HTTP 403: https://grandmasmarathon.com/; HTTP 403: https://grandmasmarathon.com/the-marathon/garry-bjorklund-half-marathon/"
+  "page": "https://grandmasmarathon.com/the-marathon/garry-bjorklund-half-marathon/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "grandmas-marathon",
@@ -3825,9 +3960,13 @@
   "distance_m": 42195.0,
   "finishers": 7555,
   "finishers_year": 2025,
-  "page": "https://grandmasmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://grandmasmarathon.com/the-marathon/grandmas-marathon/; HTTP 403: https://grandmasmarathon.com/"
+  "page": "https://grandmasmarathon.com/the-marathon/grandmas-marathon/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "grandmas-marathon",
@@ -3840,9 +3979,13 @@
   "distance_m": 5000.0,
   "finishers": 2549,
   "finishers_year": 2025,
-  "page": "https://grandmasmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://grandmasmarathon.com/the-marathon/grandmas-marathon/; HTTP 403: https://grandmasmarathon.com/; HTTP 403: https://grandmasmarathon.com/the-marathon/garry-bjorklund-half-marathon/; HTTP 403: https://grandmasmarathon.com/the-marathon/william-a-irvin-5k/"
+  "page": "https://grandmasmarathon.com/the-marathon/william-a-irvin-5k/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "milk-run-minnesota",
@@ -4322,7 +4465,7 @@
   "finishers_year": 2025,
   "page": "https://gostlouis.org/races/st-louis-marathon/",
   "status": "no-match",
-  "detail": "no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1Vn1r2UJrlivy8db4OyK6KbWjNCfvw_A&forcekml=1"
+  "detail": "no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1Vn1r2UJrlivy8db4OyK6KbWjNCfvw_A&forcekml=1; no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1Vn1r2UJrlivy8db4OyK6KbWjNCfvw_A&forcekml=1"
  },
  {
   "race": "st-louis-turkey-trot",
@@ -4466,9 +4609,13 @@
   "distance_m": 5000.0,
   "finishers": 1867,
   "finishers_year": 2025,
-  "page": "https://charlottesports.org/event/charlotte-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://charlottesports.org/event/charlotte-marathon/runner-info/; HTTP 403: https://charlottesports.org/event/charlotte-marathon/"
+  "page": "https://charlottesports.org/event/charlotte-marathon/runner-info/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun",
+  "found": [
+   "image",
+   "mapmyrun"
+  ]
  },
  {
   "race": "charlotte-marathon",
@@ -4481,9 +4628,13 @@
   "distance_m": 21097.0,
   "finishers": 5494,
   "finishers_year": 2025,
-  "page": "https://charlottesports.org/event/charlotte-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://charlottesports.org/event/charlotte-marathon/runner-info/; HTTP 403: https://charlottesports.org/event/charlotte-marathon/"
+  "page": "https://charlottesports.org/event/charlotte-marathon/runner-info/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun",
+  "found": [
+   "image",
+   "mapmyrun"
+  ]
  },
  {
   "race": "charlotte-marathon",
@@ -4496,9 +4647,13 @@
   "distance_m": 42195.0,
   "finishers": 2649,
   "finishers_year": 2025,
-  "page": "https://charlottesports.org/event/charlotte-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://charlottesports.org/event/charlotte-marathon/runner-info/; HTTP 403: https://charlottesports.org/event/charlotte-marathon/"
+  "page": "https://charlottesports.org/event/charlotte-marathon/runner-info/",
+  "status": "unsupported",
+  "detail": "only image, mapmyrun",
+  "found": [
+   "image",
+   "mapmyrun"
+  ]
  },
  {
   "race": "charlotte-turkey-trot",
@@ -4542,8 +4697,12 @@
   "finishers": 2769,
   "finishers_year": 2025,
   "page": "https://event.racereach.com/trophy-trot/",
-  "status": "no-source",
-  "detail": "no course map on https://event.racereach.com/trophy-trot/"
+  "status": "unsupported",
+  "detail": "only googlemaps, image",
+  "found": [
+   "googlemaps",
+   "image"
+  ]
  },
  {
   "race": "wilmington-marathon",
@@ -4556,9 +4715,12 @@
   "distance_m": 21097.0,
   "finishers": 2059,
   "finishers_year": 2025,
-  "page": "https://wilmingtonncmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://wilmingtonncmarathon.com/half-marathon/; HTTP 403: https://wilmingtonncmarathon.com/"
+  "page": "https://wilmingtonncmarathon.com/half-marathon/",
+  "status": "unsupported",
+  "detail": "only pdf",
+  "found": [
+   "pdf"
+  ]
  },
  {
   "race": "wilmington-marathon",
@@ -4571,9 +4733,12 @@
   "distance_m": 42195.0,
   "finishers": 1103,
   "finishers_year": 2025,
-  "page": "https://wilmingtonncmarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://wilmingtonncmarathon.com/half-marathon/; HTTP 403: https://wilmingtonncmarathon.com/; HTTP 403: https://wilmingtonncmarathon.com/full-marathon/"
+  "page": "https://wilmingtonncmarathon.com/full-marathon/",
+  "status": "unsupported",
+  "detail": "only pdf",
+  "found": [
+   "pdf"
+  ]
  },
  {
   "race": "winston-salem-turkey-strut",
@@ -4606,8 +4771,8 @@
   "finishers": 1750,
   "finishers_year": 2026,
   "page": "https://fargomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://fargomarathon.com/"
+  "status": "no-source",
+  "detail": "no course map on https://fargomarathon.com/"
  },
  {
   "race": "fargo-marathon",
@@ -4621,8 +4786,8 @@
   "finishers": 2703,
   "finishers_year": 2026,
   "page": "https://fargomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://fargomarathon.com/"
+  "status": "no-source",
+  "detail": "no course map on https://fargomarathon.com/"
  },
  {
   "race": "fargo-marathon",
@@ -4636,8 +4801,8 @@
   "finishers": 3325,
   "finishers_year": 2026,
   "page": "https://fargomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://fargomarathon.com/"
+  "status": "no-source",
+  "detail": "no course map on https://fargomarathon.com/"
  },
  {
   "race": "fargo-marathon",
@@ -4651,8 +4816,8 @@
   "finishers": 1343,
   "finishers_year": 2026,
   "page": "https://fargomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://fargomarathon.com/"
+  "status": "no-source",
+  "detail": "no course map on https://fargomarathon.com/"
  },
  {
   "race": "lincoln-marathon",
@@ -4755,8 +4920,11 @@
   "finishers": 4936,
   "finishers_year": 2025,
   "page": "https://www.jerseycitymarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.jerseycitymarathon.com/"
+  "status": "unsupported",
+  "detail": "only googlemaps",
+  "found": [
+   "googlemaps"
+  ]
  },
  {
   "race": "jersey-city-marathon",
@@ -4770,8 +4938,11 @@
   "finishers": 3017,
   "finishers_year": 2025,
   "page": "https://www.jerseycitymarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.jerseycitymarathon.com/"
+  "status": "unsupported",
+  "detail": "only googlemaps",
+  "found": [
+   "googlemaps"
+  ]
  },
  {
   "race": "mercer-county-turkey-trot",
@@ -4917,9 +5088,13 @@
   "distance_m": 21097.0,
   "finishers": 2775,
   "finishers_year": 2025,
-  "page": "https://www.thebuffalomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thebuffalomarathon.com/athletes/course-maps/; HTTP 403: https://www.thebuffalomarathon.com/"
+  "page": "https://www.thebuffalomarathon.com/athletes/course-maps/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "buffalo-marathon",
@@ -4932,9 +5107,13 @@
   "distance_m": 42195.0,
   "finishers": 1215,
   "finishers_year": 2025,
-  "page": "https://www.thebuffalomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.thebuffalomarathon.com/athletes/course-maps/; HTTP 403: https://www.thebuffalomarathon.com/"
+  "page": "https://www.thebuffalomarathon.com/athletes/course-maps/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "buffalo-turkey-trot",
@@ -5753,9 +5932,12 @@
   "distance_m": 10000.0,
   "finishers": 4138,
   "finishers_year": 2025,
-  "page": "https://thanksgivingdayrace.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://thanksgivingdayrace.com/race/tdr-5k/; HTTP 403: https://thanksgivingdayrace.com/; HTTP 403: https://thanksgivingdayrace.com/race/western-southern-10k/"
+  "page": "https://thanksgivingdayrace.com/race/western-southern-10k/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "cincinnati-thanksgiving-day-race",
@@ -5768,9 +5950,12 @@
   "distance_m": 5000.0,
   "finishers": 4707,
   "finishers_year": 2025,
-  "page": "https://thanksgivingdayrace.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://thanksgivingdayrace.com/race/tdr-5k/; HTTP 403: https://thanksgivingdayrace.com/"
+  "page": "https://thanksgivingdayrace.com/race/tdr-5k/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "cleveland-marathon",
@@ -5999,11 +6184,8 @@
   "finishers": 1957,
   "finishers_year": 2025,
   "page": "https://www.columbusturkeytrot.com/",
-  "status": "unsupported",
-  "detail": "only mapmyrun",
-  "found": [
-   "mapmyrun"
-  ]
+  "status": "error",
+  "detail": "HTTP 522: https://www.columbusturkeytrot.com/"
  },
  {
   "race": "daves-turkey-chase",
@@ -7072,9 +7254,12 @@
   "distance_m": 16093.0,
   "finishers": 11745,
   "finishers_year": 2025,
-  "page": "https://rockyrun.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://rockyrun.com/info/; HTTP 403: https://rockyrun.com/"
+  "page": "https://rockyrun.com/info/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "rocky-run",
@@ -7087,9 +7272,12 @@
   "distance_m": 5000.0,
   "finishers": 18481,
   "finishers_year": 2025,
-  "page": "https://rockyrun.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://rockyrun.com/info/; HTTP 403: https://rockyrun.com/"
+  "page": "https://rockyrun.com/info/",
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "run-for-the-diamonds",
@@ -7371,9 +7559,13 @@
   "distance_m": 21097.0,
   "finishers": 2903,
   "finishers_year": 2025,
-  "page": "https://kiawahresort.com/recreation/kiawah-island-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/course/; HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/"
+  "page": "https://kiawahresort.com/recreation/kiawah-island-marathon/course/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "kiawah-island-marathon",
@@ -7386,9 +7578,13 @@
   "distance_m": 42195.0,
   "finishers": 1505,
   "finishers_year": 2025,
-  "page": "https://kiawahresort.com/recreation/kiawah-island-marathon/",
-  "status": "error",
-  "detail": "HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/course/; HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/"
+  "page": "https://kiawahresort.com/recreation/kiawah-island-marathon/course/",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "myrtle-beach-marathon",
@@ -8076,9 +8272,13 @@
   "distance_m": 21097.0,
   "finishers": 9298,
   "finishers_year": 2025,
-  "page": "https://sanantoniomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://sanantoniomarathon.com/courses; HTTP 403: https://sanantoniomarathon.com/"
+  "page": "https://sanantoniomarathon.com/courses",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "san-antonio-marathon",
@@ -8091,9 +8291,13 @@
   "distance_m": 42195.0,
   "finishers": 3000,
   "finishers_year": 2025,
-  "page": "https://sanantoniomarathon.com/",
-  "status": "error",
-  "detail": "HTTP 403: https://sanantoniomarathon.com/courses; HTTP 403: https://sanantoniomarathon.com/"
+  "page": "https://sanantoniomarathon.com/courses",
+  "status": "unsupported",
+  "detail": "only image, pdf",
+  "found": [
+   "image",
+   "pdf"
+  ]
  },
  {
   "race": "woodlands-marathon",
@@ -8888,8 +9092,8 @@
   "finishers": 1911,
   "finishers_year": 2025,
   "page": "https://www.madisonmarathon.org/",
-  "status": "error",
-  "detail": "HTTP 403: https://www.madisonmarathon.org/"
+  "status": "no-source",
+  "detail": "no course map on https://www.madisonmarathon.org/"
  },
  {
   "race": "milwaukee-lakefront-marathon",

@@ -4,16 +4,15 @@ Weekly crawl of 2026-11-06: 294 races, 464 events, 55 courses published (12%).
 
 | Status | Events | Meaning |
 | --- | ---: | --- |
-| ok | 42 | Course found; length within 3% of the race distance. |
+| ok | 45 | Course found; length within 3% of the race distance. |
 | warn | 10 | Course found; check it (length within 8%, or joined from part of a larger map). |
-| stale | 3 | File from an earlier crawl; the latest crawl did not confirm it. |
-| unsupported | 288 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
-| no-source | 25 | No course map found on the organizer's site. |
+| unsupported | 339 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
+| no-source | 31 | No course map found on the organizer's site. |
 | no-match | 20 | Maps found, but no line matches the race distance. |
 | reject | 3 | A line matches, but it failed a check. |
-| error | 73 | The site could not be read (robots.txt, blocked, or down). |
+| error | 16 | The site could not be read (robots.txt, blocked, or down). |
 
-Map types on pages without a readable course: image 228, pdf 176, googlemaps 67, mapmyrun 30, ridewithgps 13, plotaroute 13, garmin 12, strava 5, arcgis 1, onthegomap 1.
+Map types on pages without a readable course: image 276, pdf 209, googlemaps 79, mapmyrun 39, ridewithgps 13, plotaroute 13, garmin 12, strava 5, arcgis 1, onthegomap 1.
 
 ## Not covered yet
 
@@ -29,17 +28,17 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | AR | [Little Rock Marathon](https://littlerockmarathon.com/course/) | Half Marathon | no-match | no line near 21.10 km in https://www.google.com/maps/d/kml?mid=16ZNA0DtAiFasUEP0zLTa398zbdM&forcekml=1 |
 | AR | [Little Rock Marathon](https://littlerockmarathon.com/course/) | Marathon | no-match | no line near 42.20 km in https://www.google.com/maps/d/kml?mid=16ZNA0DtAiFasUEP0zLTa398zbdM&forcekml=1 |
 | AZ | [Mesa Marathon](https://mesamarathon.com/info?tab=course) | Marathon | unsupported | only googlemaps, image |
-| AZ | [Pat's Run](https://pattillmanfoundation.org/pats-run/) | 4.2 Mile | error | HTTP 403: https://pattillmanfoundation.org/pats-run/ |
+| AZ | [Pat's Run](https://pattillmanfoundation.org/pats-run/) | 4.2 Mile | no-source | no course map on https://pattillmanfoundation.org/pats-run/ |
 | AZ | [Phoenix Marathon](https://phxmarathon.com/info?tab=course) | Marathon | unsupported | only googlemaps, image |
 | CA | [Bay to Breakers](https://www.baytobreakers.com/12k) | 12K | unsupported | only image |
-| CA | [Berkeley Half Marathon](https://berkeleyhalfmarathon.com/) | 10K | error | HTTP 403: https://berkeleyhalfmarathon.com/the-races/half-marathon/; HTTP 403: https://berkeleyhalfmarathon.com/; HTTP 403: https://berkeleyhalfmarathon.com/the-races/berkeley-half-10k-race/ |
-| CA | [Berkeley Half Marathon](https://berkeleyhalfmarathon.com/) | 5K | error | HTTP 403: https://berkeleyhalfmarathon.com/the-races/half-marathon/; HTTP 403: https://berkeleyhalfmarathon.com/; HTTP 403: https://berkeleyhalfmarathon.com/the-races/berkeley-half-10k-race/; HTTP 403: https://berkeleyhalfmarathon.com/the-races/5-k/ |
-| CA | [Berkeley Half Marathon](https://berkeleyhalfmarathon.com/) | Half Marathon | error | HTTP 403: https://berkeleyhalfmarathon.com/the-races/half-marathon/; HTTP 403: https://berkeleyhalfmarathon.com/ |
+| CA | [Berkeley Half Marathon](https://berkeleyhalfmarathon.com/the-races/berkeley-half-10k-race/) | 10K | unsupported | only googlemaps, image, pdf |
+| CA | [Berkeley Half Marathon](https://berkeleyhalfmarathon.com/the-races/5-k/) | 5K | unsupported | only googlemaps, image, pdf |
+| CA | [Berkeley Half Marathon](https://berkeleyhalfmarathon.com/the-races/half-marathon/) | Half Marathon | unsupported | only image, pdf |
 | CA | [Big Sur International Marathon](https://www.bigsurmarathon.org/races/11-miler/) | 11 Mile | unsupported | only pdf |
 | CA | [Big Sur International Marathon](https://www.bigsurmarathon.org/races/marathon/) | Marathon | unsupported | only pdf |
-| CA | [Carlsbad Marathon](https://inmotionevents.com/event/carlsbad-marathon/) | 5K | error | HTTP 403: https://inmotionevents.com/event/carlsbad-marathon/ |
-| CA | [Carlsbad Marathon](https://inmotionevents.com/event/carlsbad-marathon/) | Half Marathon | error | HTTP 403: https://inmotionevents.com/event/carlsbad-marathon/ |
-| CA | [Carlsbad Marathon](https://inmotionevents.com/event/carlsbad-marathon/) | Marathon | error | HTTP 403: https://inmotionevents.com/event/carlsbad-marathon/ |
+| CA | [Carlsbad Marathon](https://inmotionevents.com/event/carlsbad-marathon/) | 5K | unsupported | only image, pdf |
+| CA | [Carlsbad Marathon](https://inmotionevents.com/event/carlsbad-marathon/) | Half Marathon | unsupported | only image, pdf |
+| CA | [Carlsbad Marathon](https://inmotionevents.com/event/carlsbad-marathon/) | Marathon | unsupported | only image, pdf |
 | CA | [Dana Point Turkey Trot](https://www.turkeytrot.com/course-maps) | 10K | unsupported | only image |
 | CA | [Dana Point Turkey Trot](https://www.turkeytrot.com/course-maps) | 5K | unsupported | only image |
 | CA | [Disneyland Half Marathon](https://www.rundisney.com/events/disneyland/disneyland-half-marathon-weekend/) | Half Marathon | error | HTTP 403: https://www.rundisney.com/events/disneyland/disneyland-half-marathon-weekend/ |
@@ -49,33 +48,33 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | CA | [La Jolla Half Marathon](https://lajollahalfmarathon.com/san-diego-running-races/half-marathon/) | Half Marathon | unsupported | only googlemaps, image |
 | CA | [Long Beach Marathon](https://www.runlongbeach.com/half-marathon) | Half Marathon | unsupported | only image |
 | CA | [Long Beach Marathon](https://www.runlongbeach.com/marathon) | Marathon | unsupported | only image |
-| CA | [Los Angeles Marathon](https://www.mccourtfoundation.org/event/los-angeles-marathon/) | LA 5K | error | HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/; HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/ |
-| CA | [Los Angeles Marathon](https://www.mccourtfoundation.org/event/los-angeles-marathon/) | Marathon | error | HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/; HTTP 403: https://www.mccourtfoundation.org/event/los-angeles-marathon/ |
+| CA | [Los Angeles Marathon](https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/) | LA 5K | unsupported | only image, pdf |
+| CA | [Los Angeles Marathon](https://www.mccourtfoundation.org/event/los-angeles-marathon/distances-courses/) | Marathon | unsupported | only image, pdf |
 | CA | [Monterey Bay Half Marathon](https://www.montereybayhalfmarathon.org/maps/) | Half Marathon | unsupported | only image, pdf |
 | CA | [Napa Valley Marathon](https://napavalleymarathon.org/race-information/) | Half Marathon | unsupported | only pdf |
 | CA | [Napa Valley Marathon](https://napavalleymarathon.org/race-information/) | Marathon | unsupported | only pdf |
-| CA | [Oakland Marathon](https://www.oaklandmarathon.com/) | 10K | error | HTTP 403: https://oaklandmarathon.com/races/half/; HTTP 403: https://www.oaklandmarathon.com/; HTTP 403: https://oaklandmarathon.com/races/5k/; HTTP 403: https://oaklandmarathon.com/races/10k/ |
-| CA | [Oakland Marathon](https://www.oaklandmarathon.com/) | 5K | error | HTTP 403: https://oaklandmarathon.com/races/half/; HTTP 403: https://www.oaklandmarathon.com/; HTTP 403: https://oaklandmarathon.com/races/5k/ |
-| CA | [Oakland Marathon](https://www.oaklandmarathon.com/) | Half Marathon | error | HTTP 403: https://oaklandmarathon.com/races/half/; HTTP 403: https://www.oaklandmarathon.com/ |
+| CA | [Oakland Marathon](https://oaklandmarathon.com/races/10k/) | 10K | unsupported | only image, mapmyrun, pdf |
+| CA | [Oakland Marathon](https://oaklandmarathon.com/races/5k/) | 5K | unsupported | only image, mapmyrun, pdf |
+| CA | [Oakland Marathon](https://oaklandmarathon.com/races/half/) | Half Marathon | unsupported | only image, mapmyrun, pdf |
 | CA | [OC Marathon](https://ocmarathon.com/hoag-oc-5k/) | 5K | unsupported | only image |
 | CA | [OC Marathon](https://ocmarathon.com/half-marathon/) | Marathon | no-match | no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1JPnNxSqBMYc3B6aN-fd4fBlcAvxPD7I&forcekml=1 |
-| CA | [Oceanside Turkey Trot](https://www.sandiegorunningco.com/sdrc_events/oside-turkey-trot/) | 5K | error | HTTP 403: https://www.sandiegorunningco.com/sdrc_events/oside-turkey-trot/ |
+| CA | [Oceanside Turkey Trot](https://www.sandiegorunningco.com/sdrc_events/oside-turkey-trot/) | 5K | unsupported | only googlemaps, image, mapmyrun |
 | CA | [Rock 'n' Roll San Diego](https://www.runrocknroll.com/events/san-diego/course-overview) | Half Marathon | unsupported | only image, pdf |
 | CA | [Rock 'n' Roll San Diego](https://www.runrocknroll.com/events/san-diego/course-overview) | Marathon | unsupported | only image, pdf |
-| CA | [Rose Bowl Half Marathon](https://www.mccourtfoundation.org/event/rose-bowl-half-5k/) | Half Marathon | error | HTTP 403: https://www.mccourtfoundation.org/event/rose-bowl-half-5k/course/; HTTP 403: https://www.mccourtfoundation.org/event/rose-bowl-half-5k/ |
+| CA | [Rose Bowl Half Marathon](https://www.mccourtfoundation.org/event/rose-bowl-half-5k/course/) | Half Marathon | unsupported | only image, pdf |
 | CA | [Run to Feed the Hungry](https://www.runtofeedthehungry.com/racedayinfo) | 10K | unsupported | only pdf |
 | CA | [Run to Feed the Hungry](https://www.runtofeedthehungry.com/racedayinfo) | 5K | unsupported | only pdf |
-| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/) | 10K | error | HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/ |
-| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/) | 1st Half Marathon (Bridge Half) | error | HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/ |
-| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/) | 2nd Half Marathon (City Half) | error | HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/; HTTP 403: https://www.thesfmarathon.com/2nd-half-marathon/ |
-| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/) | Marathon | error | HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/ |
-| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/) | Saturday 5K | error | HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/; HTTP 403: https://www.thesfmarathon.com/2nd-half-marathon/; HTTP 403: https://www.thesfmarathon.com/5k-races-overview/ |
-| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/) | Sunday 5K | error | HTTP 403: https://www.thesfmarathon.com/1st-half-marathon/; HTTP 403: https://www.thesfmarathon.com/; HTTP 403: https://www.thesfmarathon.com/full-marathon/; HTTP 403: https://www.thesfmarathon.com/10k/; HTTP 403: https://www.thesfmarathon.com/2nd-half-marathon/; HTTP 403: https://www.thesfmarathon.com/5k-races-overview/ |
+| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/10k/) | 10K | unsupported | only googlemaps, image |
+| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/1st-half-marathon/) | 1st Half Marathon (Bridge Half) | unsupported | only googlemaps, image, pdf |
+| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/2nd-half-marathon/) | 2nd Half Marathon (City Half) | unsupported | only googlemaps, image |
+| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/full-marathon/) | Marathon | unsupported | only googlemaps, image |
+| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/5k-races-overview/) | Saturday 5K | unsupported | only googlemaps, image, pdf |
+| CA | [The San Francisco Marathon](https://www.thesfmarathon.com/5k-races-overview/) | Sunday 5K | unsupported | only googlemaps, image, pdf |
 | CA | [Shamrock'n Half Marathon](https://shamrocknhalf.com/runner-information/) | 10K | unsupported | only image, pdf |
 | CA | [Shamrock'n Half Marathon](https://shamrocknhalf.com/runner-information/) | 5K | unsupported | only image, pdf |
 | CA | [Shamrock'n Half Marathon](https://shamrocknhalf.com/runner-information/) | Half Marathon | unsupported | only image, pdf |
-| CA | [Applied Materials Silicon Valley Turkey Trot](https://www.svturkeytrot.com/) | 10K | error | HTTP 403: https://www.svturkeytrot.com/course-map/; HTTP 403: https://www.svturkeytrot.com/ |
-| CA | [Applied Materials Silicon Valley Turkey Trot](https://www.svturkeytrot.com/) | 5K | error | HTTP 403: https://www.svturkeytrot.com/course-map/; HTTP 403: https://www.svturkeytrot.com/ |
+| CA | [Applied Materials Silicon Valley Turkey Trot](https://www.svturkeytrot.com/course-map/) | 10K | unsupported | only image |
+| CA | [Applied Materials Silicon Valley Turkey Trot](https://www.svturkeytrot.com/course-map/) | 5K | unsupported | only image |
 | CA | [Silver Strand Half Marathon](https://www.silverstrandhalf.com/course-map) | Half Marathon | unsupported | only image, ridewithgps |
 | CA | [Surf City Marathon](https://www.runsurfcity.com/halfmarathon) | Half Marathon | unsupported | only image, pdf |
 | CA | [Two Cities Marathon & Half](https://www.run2cm.com/courses) | Half Marathon | unsupported | only strava |
@@ -130,7 +129,7 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | FL | [Walt Disney World Marathon Weekend](https://www.rundisney.com/events/disneyworld/disney-world-marathon-weekend/) | 10K | error | HTTP 403: https://www.rundisney.com/events/disneyworld/disney-world-marathon-weekend/ |
 | FL | [Walt Disney World Marathon Weekend](https://www.rundisney.com/events/disneyworld/disney-world-marathon-weekend/) | Half Marathon | error | HTTP 403: https://www.rundisney.com/events/disneyworld/disney-world-marathon-weekend/ |
 | FL | [Walt Disney World Marathon Weekend](https://www.rundisney.com/events/disneyworld/disney-world-marathon-weekend/) | Marathon | error | HTTP 403: https://www.rundisney.com/events/disneyworld/disney-world-marathon-weekend/ |
-| GA | [AthHalf Half Marathon](https://athhalf.com/) | Half Marathon | error | HTTP 403: https://athhalf.com/athhalf/; HTTP 403: https://athhalf.com/ |
+| GA | [AthHalf Half Marathon](https://athhalf.com/athhalf/) | Half Marathon | unsupported | only image, pdf |
 | GA | [Northside Hospital Peachtree Road Race](https://www.atlantatrackclub.org/course) | 10K | unsupported | only garmin, pdf |
 | GA | [Running of the Turkeys 5K](https://runsignup.com/Race/GA/Roswell/runningoftheturkeysga) | 5K | unsupported | only image |
 | GA | [Enmarket Savannah Bridge Run](https://runsignup.com/Race/GA/Savannah/SAVBridgeRun) | 5K | unsupported | only googlemaps, image |
@@ -138,8 +137,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | HI | [JAL Honolulu Marathon](https://www.honolulumarathon.org/our-events/kalakaua-merrie-mile) | Kalakaua Merrie Mile | unsupported | only garmin, image, pdf |
 | HI | [JAL Honolulu Marathon](https://www.honolulumarathon.org/key-information/course-description) | Marathon | unsupported | only garmin, image, pdf |
 | HI | [JAL Honolulu Marathon](https://www.honolulumarathon.org/our-events/start-to-park-10k) | Start to Park 10K | unsupported | only garmin, image, pdf |
-| HI | [The Kauai Marathon & Half Marathon](https://thekauaimarathon.com/) | Half Marathon | error | HTTP 403: https://thekauaimarathon.com/the-race/the-course/; HTTP 403: https://thekauaimarathon.com/ |
-| IA | [Quad-City Times Bix 7](https://bix7.com/) | Bix 7 | error | HTTP 403: https://bix7.com/course-map/; HTTP 403: https://bix7.com/ |
+| HI | [The Kauai Marathon & Half Marathon](https://thekauaimarathon.com/the-race/the-course/) | Half Marathon | unsupported | only image, mapmyrun |
+| IA | [Quad-City Times Bix 7](https://bix7.com/course-map/) | Bix 7 | unsupported | only image |
 | IL | [Bank of America Chicago 13.1](https://www.chicago13point1.com/event-information/participant-information/course/) | Half Marathon | unsupported | only image, pdf |
 | IL | [Life Time Chicago Half Marathon](https://www.chicagohalfmarathon.com/half-marathon/) | Half Marathon | unsupported | only pdf |
 | IL | [Bank of America Chicago Marathon](https://www.chicago5k.com/event-information/) | Abbott Chicago 5K | unsupported | only pdf |
@@ -156,11 +155,11 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | IN | [IU Health 500 Festival Mini-Marathon](https://www.indymini.com/p/mini-marathon/participantinfo/maps) | Half Marathon | unsupported | only image, pdf |
 | KS | [Garmin Olathe Marathon](https://ozrun.org/course-maps/) | Half Marathon | unsupported | only image |
 | KS | [Prairie Fire Fall Marathon](https://wichitasports.com/events/prairie-fire-race-series/) | Half Marathon | error | HTTP 403: https://wichitasports.com/events/prairie-fire-race-series/ |
-| KY | [Kentucky Derby Festival miniMarathon & Marathon](https://derbyfestivalmarathon.com/) | Marathon | error | HTTP 403: https://derbyfestivalmarathon.com/course-details/; HTTP 403: https://derbyfestivalmarathon.com/ |
-| KY | [Kentucky Derby Festival miniMarathon & Marathon](https://derbyfestivalmarathon.com/) | miniMarathon | error | HTTP 403: https://derbyfestivalmarathon.com/course-details/; HTTP 403: https://derbyfestivalmarathon.com/ |
+| KY | [Kentucky Derby Festival miniMarathon & Marathon](https://derbyfestivalmarathon.com/course-details/) | Marathon | unsupported | only image, pdf |
+| KY | [Kentucky Derby Festival miniMarathon & Marathon](https://derbyfestivalmarathon.com/course-details/) | miniMarathon | unsupported | only image, pdf |
 | KY | [Northeast Family YMCA Thanksgiving Turkey Trot](https://runsignup.com/Race/KY/Louisville/TurkeyDayFun) | 5K | no-source | no course map on https://runsignup.com/Race/KY/Louisville/TurkeyDayFun |
 | KY | [Urban Bourbon Half Marathon](https://www.urbanbourbonhalf.com/Race/UrbanBourbonHalfMarathon/Page/COURSES) | Half Marathon | unsupported | only image |
-| LA | [Crescent City Classic](https://ccc10k.com/) | 10K | error | HTTP 403: https://ccc10k.com/ccc10k/; HTTP 403: https://ccc10k.com/ |
+| LA | [Crescent City Classic](https://ccc10k.com/ccc10k/) | 10K | unsupported | only image |
 | LA | [The Louisiana Marathon](https://thelouisianamarathon.com/Race/TheLouisianaMarathon/Page/QuarterMarathon5K) | 5K | unsupported | only image, pdf, plotaroute |
 | LA | [The Louisiana Marathon](https://thelouisianamarathon.com/Race/TheLouisianaMarathon/Page/SundayRaceCourses) | Half Marathon | unsupported | only image, pdf, plotaroute |
 | LA | [The Louisiana Marathon](https://thelouisianamarathon.com/Race/TheLouisianaMarathon/Page/SundayRaceCourses) | Marathon | unsupported | only image, pdf, plotaroute |
@@ -185,17 +184,17 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | MD | [Bay Bridge Run](https://runsignup.com/Race/BayBridgeRun/Page/TheCourse) | 10K | unsupported | only image |
 | MD | [YMCA Turkey Chase Charity Race](https://runsignup.com/Race/YMCATurkeyChase/Page/Maps) | 10K | unsupported | only image |
 | ME | [TD Beach to Beacon 10K](https://www.beach2beacon.org/race-weekend/10k-race-info/) | 10K | unsupported | only image |
-| ME | [Maine Coast Marathon](https://www.mainecoastmarathon.com/) | Half Marathon | error | HTTP 403: https://www.mainecoastmarathon.com/ |
-| ME | [Maine Marathon](https://mainemarathon.com/) | Half Marathon | error | HTTP 403: https://mainemarathon.com/races/marathon/; HTTP 403: https://mainemarathon.com/; HTTP 403: https://mainemarathon.com/races/half-marathon/ |
-| ME | [Maine Marathon](https://mainemarathon.com/) | Marathon | error | HTTP 403: https://mainemarathon.com/races/marathon/; HTTP 403: https://mainemarathon.com/ |
+| ME | [Maine Coast Marathon](https://www.mainecoastmarathon.com/) | Half Marathon | no-source | no course map on https://www.mainecoastmarathon.com/ |
+| ME | [Maine Marathon](https://mainemarathon.com/races/half-marathon/) | Half Marathon | unsupported | only image, mapmyrun, pdf |
+| ME | [Maine Marathon](https://mainemarathon.com/races/marathon/) | Marathon | unsupported | only image, mapmyrun, pdf |
 | ME | [Millinocket Marathon & Half](https://www.crowathletics.com/millinocket-race-overview) | Half Marathon | unsupported | only googlemaps, mapmyrun |
 | ME | [Portland Sea Dogs Mother's Day 5K](https://www.milb.com/portland/community/mothersday5k) | 5K | no-source | no course map on https://www.milb.com/portland/community/mothersday5k |
 | MI | [Bayshore Marathon](https://www.bayshoremarathon.org/course-information) | 10K | unsupported | only image |
 | MI | [Bayshore Marathon](https://www.bayshoremarathon.org/course-information) | Half Marathon | unsupported | only image |
 | MI | [Bayshore Marathon](https://www.bayshoremarathon.org/course-information) | Marathon | unsupported | only image |
 | MI | [Big House 5K](https://runsignup.com/Race/BigHouse5K/Page/Course-Maps) | 5K | unsupported | only pdf |
-| MI | [Strategic Staffing Solutions Turkey Trot](https://theparade.org/turkeytrot/) | 10K Turkey Trot | error | HTTP 403: https://theparade.org/turkeytrot/general-info/course-maps/; HTTP 403: https://theparade.org/turkeytrot/ |
-| MI | [Strategic Staffing Solutions Turkey Trot](https://theparade.org/turkeytrot/) | 5K Stuffing Strut | error | HTTP 403: https://theparade.org/turkeytrot/general-info/course-maps/; HTTP 403: https://theparade.org/turkeytrot/ |
+| MI | [Strategic Staffing Solutions Turkey Trot](https://theparade.org/turkeytrot/general-info/course-maps/) | 10K Turkey Trot | unsupported | only image, pdf |
+| MI | [Strategic Staffing Solutions Turkey Trot](https://theparade.org/turkeytrot/general-info/course-maps/) | 5K Stuffing Strut | unsupported | only image, pdf |
 | MI | [Grand Rapids Marathon](https://www.grandrapidsmarathon.com/information/course-maps/) | Half Marathon | unsupported | only image, pdf |
 | MI | [Grand Rapids Marathon](https://www.grandrapidsmarathon.com/information/course-maps/) | Marathon | unsupported | only image, pdf |
 | MI | [Amway River Bank Run](https://amwayriverbankrun.com/course/) | 10K | unsupported | only pdf |
@@ -205,9 +204,9 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | MN | [Get in Gear](https://www.tcmevents.org/alleventsandraces/getingear) | 5K | unsupported | only image, pdf |
 | MN | [Get in Gear](https://www.tcmevents.org/alleventsandraces/getingear) | Half Marathon | unsupported | only image, pdf |
 | MN | [Goldy's Run](https://www.goldysrun.com/5k) | 5K | unsupported | only image, mapmyrun |
-| MN | [Grandma's Marathon](https://grandmasmarathon.com/) | Garry Bjorklund Half Marathon | error | HTTP 403: https://grandmasmarathon.com/the-marathon/grandmas-marathon/; HTTP 403: https://grandmasmarathon.com/; HTTP 403: https://grandmasmarathon.com/the-marathon/garry-bjorklund-half-marathon/ |
-| MN | [Grandma's Marathon](https://grandmasmarathon.com/) | Marathon | error | HTTP 403: https://grandmasmarathon.com/the-marathon/grandmas-marathon/; HTTP 403: https://grandmasmarathon.com/ |
-| MN | [Grandma's Marathon](https://grandmasmarathon.com/) | William A. Irvin 5K | error | HTTP 403: https://grandmasmarathon.com/the-marathon/grandmas-marathon/; HTTP 403: https://grandmasmarathon.com/; HTTP 403: https://grandmasmarathon.com/the-marathon/garry-bjorklund-half-marathon/; HTTP 403: https://grandmasmarathon.com/the-marathon/william-a-irvin-5k/ |
+| MN | [Grandma's Marathon](https://grandmasmarathon.com/the-marathon/garry-bjorklund-half-marathon/) | Garry Bjorklund Half Marathon | unsupported | only image, pdf |
+| MN | [Grandma's Marathon](https://grandmasmarathon.com/the-marathon/grandmas-marathon/) | Marathon | unsupported | only image, pdf |
+| MN | [Grandma's Marathon](https://grandmasmarathon.com/the-marathon/william-a-irvin-5k/) | William A. Irvin 5K | unsupported | only image, pdf |
 | MN | [Milk Run](https://www.mnstatefair.org/kickoff-to-summer/milk-run) | 5K | unsupported | only image, pdf |
 | MN | [Turkey Day 5K](https://www.tcmevents.org/alleventsandraces/turkeyday/turkeyday5k) | 5K | unsupported | only googlemaps, image, pdf |
 | MN | [North Start (formerly Hot Dash)](https://www.tcmevents.org/alleventsandraces/hotdash) | 5K | no-source | no course map on https://www.tcmevents.org/alleventsandraces/hotdash |
@@ -230,31 +229,31 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | MO | [Bass Pro Fitness Series Marathon Weekend](https://fitness.basspro.com/events/marathon-weekend-events.html) | CMC Recycling 5K | error | HTTP 403: https://fitness.basspro.com/events/marathon-weekend-events/cohick-half-marathon.html; HTTP 403: https://fitness.basspro.com/events/marathon-weekend-events.html; HTTP 403: https://fitness.basspro.com/events/marathon-weekend-events/fitness-series-5K.html |
 | MO | [Bass Pro Fitness Series Marathon Weekend](https://fitness.basspro.com/events/marathon-weekend-events.html) | Cohick Half Marathon | error | HTTP 403: https://fitness.basspro.com/events/marathon-weekend-events/cohick-half-marathon.html; HTTP 403: https://fitness.basspro.com/events/marathon-weekend-events.html |
 | MO | [Springfield Turkey Trot](https://www.parkboard.org/624/29th-Annual-Turkey-Trot) | 5K | no-match | no line near 5.00 km in https://www.google.com/maps/d/kml?mid=1GWi3uqBrcGQqN_iYWg4igElBk16fJnCe&forcekml=1 |
-| MO | [St. Louis Marathon](https://gostlouis.org/races/st-louis-marathon/) | Marathon | no-match | no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1Vn1r2UJrlivy8db4OyK6KbWjNCfvw_A&forcekml=1 |
+| MO | [St. Louis Marathon](https://gostlouis.org/races/st-louis-marathon/) | Marathon | no-match | no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1Vn1r2UJrlivy8db4OyK6KbWjNCfvw_A&forcekml=1; no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1Vn1r2UJrlivy8db4OyK6KbWjNCfvw_A&forcekml=1 |
 | MO | [CCVI Trolley Run](https://www.trolleyrun.org/) | 4 Mile | no-source | no course map on https://www.trolleyrun.org/ |
 | MS | [Keesler Federal Mississippi Gulf Coast Marathon](https://runsignup.com/Race/MSGulfCoastMarathon/Page/5-K) | 5K | unsupported | only image, plotaroute |
 | MS | [Keesler Federal Mississippi Gulf Coast Marathon](https://runsignup.com/Race/MSGulfCoastMarathon/Page/SundayRaceCourses) | Half Marathon | unsupported | only image, plotaroute |
 | MT | [Missoula Marathon](https://www.missoulamarathon.org/events/marathon/) | Marathon | unsupported | only image |
-| NC | [Novant Health Charlotte Marathon](https://charlottesports.org/event/charlotte-marathon/) | 5K | error | HTTP 403: https://charlottesports.org/event/charlotte-marathon/runner-info/; HTTP 403: https://charlottesports.org/event/charlotte-marathon/ |
-| NC | [Novant Health Charlotte Marathon](https://charlottesports.org/event/charlotte-marathon/) | Half Marathon | error | HTTP 403: https://charlottesports.org/event/charlotte-marathon/runner-info/; HTTP 403: https://charlottesports.org/event/charlotte-marathon/ |
-| NC | [Novant Health Charlotte Marathon](https://charlottesports.org/event/charlotte-marathon/) | Marathon | error | HTTP 403: https://charlottesports.org/event/charlotte-marathon/runner-info/; HTTP 403: https://charlottesports.org/event/charlotte-marathon/ |
+| NC | [Novant Health Charlotte Marathon](https://charlottesports.org/event/charlotte-marathon/runner-info/) | 5K | unsupported | only image, mapmyrun |
+| NC | [Novant Health Charlotte Marathon](https://charlottesports.org/event/charlotte-marathon/runner-info/) | Half Marathon | unsupported | only image, mapmyrun |
+| NC | [Novant Health Charlotte Marathon](https://charlottesports.org/event/charlotte-marathon/runner-info/) | Marathon | unsupported | only image, mapmyrun |
 | NC | [CPI Security Charlotte Turkey Trot](https://www.cltturkeytrot.com/course-details) | 5K | no-source | no course map on https://www.cltturkeytrot.com/, https://www.cltturkeytrot.com/course-details |
 | NC | [CPI Security Charlotte Turkey Trot](https://www.cltturkeytrot.com/course-details) | 8K | no-source | no course map on https://www.cltturkeytrot.com/, https://www.cltturkeytrot.com/course-details |
-| NC | [Trophy Trot 5K](https://event.racereach.com/trophy-trot/) | 5K | no-source | no course map on https://event.racereach.com/trophy-trot/ |
-| NC | [Novant Health Wilmington Marathon](https://wilmingtonncmarathon.com/) | Half Marathon | error | HTTP 403: https://wilmingtonncmarathon.com/half-marathon/; HTTP 403: https://wilmingtonncmarathon.com/ |
-| NC | [Novant Health Wilmington Marathon](https://wilmingtonncmarathon.com/) | Marathon | error | HTTP 403: https://wilmingtonncmarathon.com/half-marathon/; HTTP 403: https://wilmingtonncmarathon.com/; HTTP 403: https://wilmingtonncmarathon.com/full-marathon/ |
+| NC | [Trophy Trot 5K](https://event.racereach.com/trophy-trot/) | 5K | unsupported | only googlemaps, image |
+| NC | [Novant Health Wilmington Marathon](https://wilmingtonncmarathon.com/half-marathon/) | Half Marathon | unsupported | only pdf |
+| NC | [Novant Health Wilmington Marathon](https://wilmingtonncmarathon.com/full-marathon/) | Marathon | unsupported | only pdf |
 | NC | [Turkey Strut 5K](https://runsignup.com/Race/NC/WinstonSalem/JRCTurkeyStrut5K) | 5K | unsupported | only image, pdf |
-| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | 10K | error | HTTP 403: https://fargomarathon.com/ |
-| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | 5K | error | HTTP 403: https://fargomarathon.com/ |
-| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | Half Marathon | error | HTTP 403: https://fargomarathon.com/ |
-| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | Marathon | error | HTTP 403: https://fargomarathon.com/ |
+| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | 10K | no-source | no course map on https://fargomarathon.com/ |
+| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | 5K | no-source | no course map on https://fargomarathon.com/ |
+| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | Half Marathon | no-source | no course map on https://fargomarathon.com/ |
+| ND | [Essentia Health Fargo Marathon](https://fargomarathon.com/) | Marathon | no-source | no course map on https://fargomarathon.com/ |
 | NE | [Lincoln Marathon](https://www.lincolnmarathon.org/details/) | Half Marathon | unsupported | only image |
 | NE | [Lincoln Marathon](https://www.lincolnmarathon.org/details/) | Marathon | unsupported | only image |
 | NE | [YMCA of Lincoln Turkey Trot](https://www.ymcalincoln.org/events/ymca-lincoln-turkey-trot) | 5K | no-source | no course map on https://www.ymcalincoln.org/events/ymca-lincoln-turkey-trot |
 | NJ | [Atlantic City Marathon](https://www.acraceseries.com/course) | Half Marathon | unsupported | only image, pdf |
 | NJ | [Belmar Five Mile Run](https://runsignup.com/Race/BelmarFiveMileRun/Page-33) | 5 Mile | unsupported | only image, mapmyrun |
-| NJ | [Jersey City Marathon](https://www.jerseycitymarathon.com/) | Half Marathon | error | HTTP 403: https://www.jerseycitymarathon.com/ |
-| NJ | [Jersey City Marathon](https://www.jerseycitymarathon.com/) | Marathon | error | HTTP 403: https://www.jerseycitymarathon.com/ |
+| NJ | [Jersey City Marathon](https://www.jerseycitymarathon.com/) | Half Marathon | unsupported | only googlemaps |
+| NJ | [Jersey City Marathon](https://www.jerseycitymarathon.com/) | Marathon | unsupported | only googlemaps |
 | NJ | [Mercer County Turkey Trot](https://www.mercercountyturkeytrot.com/course-map) | 5K | unsupported | only image, pdf |
 | NJ | [Spring Lake Five Mile Run](https://www.springlake5.org/information-sheet) | 5 Mile | unsupported | only image, mapmyrun, pdf |
 | NV | [Las Vegas Marathon](https://vegasmarathon.com/info?tab=course) | Marathon | unsupported | only googlemaps, image |
@@ -262,8 +261,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | NY | [New Balance Bronx 10 Mile](https://webassets.nyrr.org/nyrrwebsiteassets/Bronx10M25_Map_072825_RD2.pdf) | 10 Mile | unsupported | only googlemaps, pdf |
 | NY | [NYCRUNS Brooklyn Experience Half Marathon](https://nycruns.com/race/nycruns-brooklyn-experience-half-marathon) | Half Marathon | unsupported | only image, pdf |
 | NY | [RBC Brooklyn Half](https://webassets.nyrr.org/nyrrwebsiteassets/RBCBKH26_MapCourse_inset_Neighborhoods_M4.pdf) | Half Marathon | unsupported | only pdf |
-| NY | [Buffalo Marathon](https://www.thebuffalomarathon.com/) | Half Marathon | error | HTTP 403: https://www.thebuffalomarathon.com/athletes/course-maps/; HTTP 403: https://www.thebuffalomarathon.com/ |
-| NY | [Buffalo Marathon](https://www.thebuffalomarathon.com/) | Marathon | error | HTTP 403: https://www.thebuffalomarathon.com/athletes/course-maps/; HTTP 403: https://www.thebuffalomarathon.com/ |
+| NY | [Buffalo Marathon](https://www.thebuffalomarathon.com/athletes/course-maps/) | Half Marathon | unsupported | only image, pdf |
+| NY | [Buffalo Marathon](https://www.thebuffalomarathon.com/athletes/course-maps/) | Marathon | unsupported | only image, pdf |
 | NY | [YMCA Buffalo Niagara Turkey Trot](https://www.ymcabn.org/ymca-turkey-trot/runner-information) | 8K | unsupported | only googlemaps, image, pdf |
 | NY | [JPMorganChase Corporate Challenge New York](https://www.jpmorganchasecc.com/en/home/our-locations/new-york-city) | 3.5 Mile | no-source | no course map on https://www.jpmorganchasecc.com/en/home/our-locations/new-york-city |
 | NY | [New Balance 5th Avenue Mile](https://www.nyrr.org/races-and-events/2026/new-balance-5th-avenue-mile) | Road Mile | unsupported | only googlemaps |
@@ -295,8 +294,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | OH | [Bockfest 5K](https://flyingpigmarathon.com/tql-beer-series/event/bockfest-5k) | 5K | no-match | no line near 5.00 km in https://www.google.com/maps/d/kml?mid=1gaQGU9ApEWwlynJzdobaq2Uy_AeIKMg&forcekml=1 |
 | OH | [Americana Festival 5K](https://runsignup.com/Race/OH/Centerville/Americana5k) | 5K | unsupported | only mapmyrun |
 | OH | [Chagrin Falls Booster Club 5K Turkey Trot](https://runsignup.com/Race/OH/ChagrinFalls/ChagrinBoostersTurkeyTrot5K) | 5K | unsupported | only googlemaps, image |
-| OH | [Western & Southern Thanksgiving Day Race](https://thanksgivingdayrace.com/) | 10K | error | HTTP 403: https://thanksgivingdayrace.com/race/tdr-5k/; HTTP 403: https://thanksgivingdayrace.com/; HTTP 403: https://thanksgivingdayrace.com/race/western-southern-10k/ |
-| OH | [Western & Southern Thanksgiving Day Race](https://thanksgivingdayrace.com/) | 5K | error | HTTP 403: https://thanksgivingdayrace.com/race/tdr-5k/; HTTP 403: https://thanksgivingdayrace.com/ |
+| OH | [Western & Southern Thanksgiving Day Race](https://thanksgivingdayrace.com/race/western-southern-10k/) | 10K | unsupported | only image |
+| OH | [Western & Southern Thanksgiving Day Race](https://thanksgivingdayrace.com/race/tdr-5k/) | 5K | unsupported | only image |
 | OH | [University Hospitals Cleveland Marathon](https://www.clevelandmarathon.com/races/10k.aspx) | 10K | unsupported | only image, pdf, ridewithgps |
 | OH | [University Hospitals Cleveland Marathon](https://www.clevelandmarathon.com/races/5k.aspx) | 5K | unsupported | only image, pdf, ridewithgps |
 | OH | [University Hospitals Cleveland Marathon](https://www.clevelandmarathon.com/races/half-marathon.aspx) | Half Marathon | unsupported | only image, pdf, ridewithgps |
@@ -305,7 +304,7 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | OH | [Nationwide Children's Hospital Columbus Marathon & 1/2 Marathon](https://www.columbusmarathon.com/1-2-marathon) | Half Marathon | unsupported | only image, pdf |
 | OH | [Nationwide Children's Hospital Columbus Marathon & 1/2 Marathon](https://www.columbusmarathon.com/jesseowens5k) | Jesse Owens 5K | unsupported | only image |
 | OH | [Nationwide Children's Hospital Columbus Marathon & 1/2 Marathon](https://www.columbusmarathon.com/marathon) | Marathon | unsupported | only image, pdf |
-| OH | [Chase Columbus Turkey Trot](https://www.columbusturkeytrot.com/) | 5 Miler | unsupported | only mapmyrun |
+| OH | [Chase Columbus Turkey Trot](https://www.columbusturkeytrot.com/) | 5 Miler | error | HTTP 522: https://www.columbusturkeytrot.com/ |
 | OH | [Dave's Turkey Chase 5K](https://runtoledo.com/turkey-chase-course-guide/) | 5K | unsupported | only image |
 | OH | [Delaware Turkey Trot](https://runsignup.com/Race/OH/Delaware/DelawareTurkeyTrot) | 5K | unsupported | only googlemaps, image |
 | OH | [Flying Pig Marathon Weekend](https://flyingpigmarathon.com/flying-pig-marathon-weekend/event/10k) | 10K | no-match | no line near 10.00 km in https://www.google.com/maps/d/kml?mid=1gaQGU9ApEWwlynJzdobaq2Uy_AeIKMg&forcekml=1 |
@@ -353,8 +352,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | PA | [DICK'S Sporting Goods Pittsburgh Marathon](https://p3r.org/sites/page.json?slug=course-information&site=pittsburgh-marathon) | Marathon | no-match | no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1zNDVBDOG5pguR_iRjNkCqyzaJfOAKV4&forcekml=1 |
 | PA | [YMCA of Greater Pittsburgh Turkey Trot](https://p3r.org/races/ymca-turkey-trot) | 5 Mile | unsupported | only pdf |
 | PA | [YMCA of Greater Pittsburgh Turkey Trot](https://p3r.org/races/ymca-turkey-trot) | 5K | unsupported | only pdf |
-| PA | [Rocky Run](https://rockyrun.com/) | 10 Mile | error | HTTP 403: https://rockyrun.com/info/; HTTP 403: https://rockyrun.com/ |
-| PA | [Rocky Run](https://rockyrun.com/) | 5K | error | HTTP 403: https://rockyrun.com/info/; HTTP 403: https://rockyrun.com/ |
+| PA | [Rocky Run](https://rockyrun.com/info/) | 10 Mile | unsupported | only image |
+| PA | [Rocky Run](https://rockyrun.com/info/) | 5K | unsupported | only image |
 | PA | [Run for the Diamonds](https://www.runfordiamonds.com/course-map) | 9 Mile | unsupported | only image |
 | RI | [Blessing of the Fleet Road Race](https://narragansettlionsclub.org/annual-events/blessing-of-the-fleet-celebration/) | 10 Miles | unsupported | only googlemaps, image |
 | RI | [Amica Newport Marathon & Half Marathon](https://newportmarathon.com/course/) | Half Marathon | no-match | no line near 21.10 km in https://www.google.com/maps/d/kml?mid=1sXmgAP78aOeJw80CHCiNu1XTqMc&forcekml=1 |
@@ -365,8 +364,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | SC | [Cooper River Bridge Run](https://bridgerun.com/maps-2/) | 10K | unsupported | only image, pdf |
 | SC | [TreesUpstate Turkey Day Run](https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k) | 5K Run & Walk | unsupported | only pdf, ridewithgps |
 | SC | [TreesUpstate Turkey Day Run](https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k) | 8K | unsupported | only pdf, ridewithgps |
-| SC | [Kiawah Island Marathon](https://kiawahresort.com/recreation/kiawah-island-marathon/) | Half Marathon | error | HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/course/; HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/ |
-| SC | [Kiawah Island Marathon](https://kiawahresort.com/recreation/kiawah-island-marathon/) | Marathon | error | HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/course/; HTTP 403: https://kiawahresort.com/recreation/kiawah-island-marathon/ |
+| SC | [Kiawah Island Marathon](https://kiawahresort.com/recreation/kiawah-island-marathon/course/) | Half Marathon | unsupported | only image, pdf |
+| SC | [Kiawah Island Marathon](https://kiawahresort.com/recreation/kiawah-island-marathon/course/) | Marathon | unsupported | only image, pdf |
 | SC | [Myrtle Beach Marathon](https://mbmarathon.com/maps-elevevations/) | 5K | no-match | no line near 5.00 km in https://www.google.com/maps/d/kml?mid=15ZriaUQfoVwDKTJ26nqD9cjKvZkKHso&forcekml=1 |
 | SD | [Sioux Falls Marathon](https://www.siouxfallsmarathon.com/half-marathon) | Half Marathon | unsupported | only image, mapmyrun |
 | TN | [Hot to Trot 5K](https://runsignup.com/Race/TN/Knoxville/HottoTrot) | 5K | unsupported | only image |
@@ -389,8 +388,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | TX | [Chevron Houston Marathon](https://www.chevronhoustonmarathon.com/course/) | Marathon | unsupported | only pdf |
 | TX | [Katy YMCA Turkey Dash](https://runsignup.com/Race/TX/Katy/KatyYMCATurkeyDash) | 5K | unsupported | only googlemaps |
 | TX | [San Antonio Food Bank Turkey Trot](https://safoodbank.org/turkey-trot/) | 5K | no-match | no line near 5.00 km in https://www.google.com/maps/d/kml?mid=1o6mNyqDU18n6nuqeUPpW4JEJRarTdR8&forcekml=1 |
-| TX | [San Antonio Marathon](https://sanantoniomarathon.com/) | Half Marathon | error | HTTP 403: https://sanantoniomarathon.com/courses; HTTP 403: https://sanantoniomarathon.com/ |
-| TX | [San Antonio Marathon](https://sanantoniomarathon.com/) | Marathon | error | HTTP 403: https://sanantoniomarathon.com/courses; HTTP 403: https://sanantoniomarathon.com/ |
+| TX | [San Antonio Marathon](https://sanantoniomarathon.com/courses) | Half Marathon | unsupported | only image, pdf |
+| TX | [San Antonio Marathon](https://sanantoniomarathon.com/courses) | Marathon | unsupported | only image, pdf |
 | TX | [The Woodlands Marathon](https://www.thewoodlandsmarathon.com/course-maps) | Half Marathon | unsupported | only googlemaps, image, pdf |
 | TX | [The Woodlands Marathon](https://www.thewoodlandsmarathon.com/course-maps) | Marathon | unsupported | only googlemaps, image, pdf |
 | UT | [REVEL Big Cottonwood](https://results.laurelt.com/bcm/info?tab=course) | Marathon | unsupported | only googlemaps, image |
@@ -428,5 +427,5 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | WA | [St. Patrick's Day Dash](https://stpatsdash.com/race-info/) | 5K | unsupported | only pdf |
 | WI | [Bellin Run](https://www.bellinrun.com/event-information) | 10K | no-source | no course map on https://www.bellinrun.com/, https://www.bellinrun.com/event-information, https://www.bellinrun.com/results-records/course-records |
 | WI | [Bellin Run](https://www.bellinrun.com/event-information) | 5K | no-source | no course map on https://www.bellinrun.com/, https://www.bellinrun.com/event-information, https://www.bellinrun.com/results-records/course-records |
-| WI | [Madison Marathon](https://www.madisonmarathon.org/) | Marathon | error | HTTP 403: https://www.madisonmarathon.org/ |
+| WI | [Madison Marathon](https://www.madisonmarathon.org/) | Marathon | no-source | no course map on https://www.madisonmarathon.org/ |
 | WI | [Milwaukee Lakefront Marathon](https://www.milwaukeelakefrontmarathon.org/marathon-map) | Marathon | no-source | no course map on https://www.milwaukeelakefrontmarathon.org/, https://www.milwaukeelakefrontmarathon.org/marathon-map |
