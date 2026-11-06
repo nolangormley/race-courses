@@ -1,23 +1,23 @@
 # Coverage
 
-Weekly crawl of 2026-11-06: 294 races, 464 events, 53 courses published (11%).
+Weekly crawl of 2026-11-06: 294 races, 464 events, 55 courses published (12%).
 
 | Status | Events | Meaning |
 | --- | ---: | --- |
-| ok | 40 | Course found; length within 3% of the race distance. |
+| ok | 42 | Course found; length within 3% of the race distance. |
 | warn | 10 | Course found; check it (length within 8%, or joined from part of a larger map). |
 | stale | 3 | File from an earlier crawl; the latest crawl did not confirm it. |
-| unsupported | 290 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
+| unsupported | 288 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
 | no-source | 25 | No course map found on the organizer's site. |
 | no-match | 20 | Maps found, but no line matches the race distance. |
 | reject | 3 | A line matches, but it failed a check. |
 | error | 73 | The site could not be read (robots.txt, blocked, or down). |
 
-Map types on pages without a readable course: image 230, pdf 178, googlemaps 69, mapmyrun 30, ridewithgps 13, plotaroute 13, garmin 12, strava 5, arcgis 1, onthegomap 1.
+Map types on pages without a readable course: image 228, pdf 176, googlemaps 67, mapmyrun 30, ridewithgps 13, plotaroute 13, garmin 12, strava 5, arcgis 1, onthegomap 1.
 
 ## Not covered yet
 
-A hand-traced GPX in `manual/` can cover any of these; see the README.
+A traced GPX in `manual/` can cover any of these; see the README.
 
 | State | Race | Event | Status | Detail |
 | --- | --- | --- | --- | --- |
@@ -347,8 +347,6 @@ A hand-traced GPX in `manual/` can cover any of these; see the README.
 | PA | [Philadelphia Marathon Weekend](https://www.philadelphiamarathon.com/races/8k-run/) | 8K | unsupported | only image, pdf |
 | PA | [Philadelphia Marathon Weekend](https://www.philadelphiamarathon.com/races/half-marathon/) | Half Marathon | unsupported | only image, pdf |
 | PA | [Philadelphia Marathon Weekend](https://www.philadelphiamarathon.com/races/marathon/) | Marathon | unsupported | only image, pdf |
-| PA | [EQT Pittsburgh 10 Miler & 10K](https://p3r.org/races/eqt-10-miler) | 10 Miler | unsupported | only googlemaps, image, pdf |
-| PA | [EQT Pittsburgh 10 Miler & 10K](https://p3r.org/races/eqt-10-miler) | 10K | unsupported | only googlemaps, image, pdf |
 | PA | [Richard S. Caliguiri City of Pittsburgh Great Race](https://www.rungreatrace.com/10K) | 10K | unsupported | only googlemaps, pdf |
 | PA | [Richard S. Caliguiri City of Pittsburgh Great Race](https://www.rungreatrace.com/5K) | 5K | unsupported | only googlemaps, pdf |
 | PA | [DICK'S Sporting Goods Pittsburgh Marathon](https://p3r.org/sites/page.json?slug=course-information&site=pittsburgh-marathon) | 5K | reject | length 4.56 km is -8.7% off target |

@@ -57,7 +57,7 @@ Edit `races.yaml` and open a pull request; CI checks the file.
       source: https://...              # direct GPX/KML/My Maps link, an OSM relation, or a manual/ path
 ```
 
-When an organizer publishes the course only as a PDF or an image, trace it by hand, save it as `manual/<state>/<race>/<event>.gpx`, and set the event's `source` to that path.
+When an organizer publishes the course only as a PDF or an image, trace it, save it as `manual/<state>/<race>/<event>.gpx`, set the event's `source` to that path, and add an entry to `manual/README.md` that says where the line comes from.
 The crawler then gives it the same elevation and checks as the other courses.
 
 ## Run it
@@ -73,7 +73,8 @@ uv run pytest
 
 - Course lines come from maps that race organizers publish, or from OpenStreetMap route relations; each record in `index.json` links its source map and page.
 - Elevation comes from USGS 3DEP, which is in the public domain.
-- Bridge and tunnel positions, and courses with the source kind `osm`, come from OpenStreetMap, © OpenStreetMap contributors, under the ODbL.
+- Bridge and tunnel positions, courses with the source kind `osm`, and the traced courses in `manual/` come from OpenStreetMap, © OpenStreetMap contributors, under the ODbL.
+  `manual/README.md` says where each traced course comes from and how sure it is.
 - The code is under the MIT license.
 
 Race organizers who want a course removed or corrected can open an issue.
