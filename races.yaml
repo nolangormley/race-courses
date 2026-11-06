@@ -4001,12 +4001,14 @@
     finishers_year: 2025
     finishers_source: https://results.raceroster.com/v2/api/events/jzy77jvz2hsm4wg6
     notes: Timed rows in the Race Roster official results (3,335 rows listed).
+    source: manual/pa/pittsburgh-10-miler/10-miler.gpx
   - name: 10K
     distance_m: 10000
     finishers: 1155
     finishers_year: 2025
     finishers_source: https://results.raceroster.com/v2/api/events/jzy77jvz2hsm4wg6
     notes: Race Roster official results count (all rows timed). The P3R page links one course map PDF named for the 10 Miler; the 10K route may need its own source.
+    source: manual/pa/pittsburgh-10-miler/10k.gpx
 - slug: pittsburgh-great-race
   name: Richard S. Caliguiri City of Pittsburgh Great Race
   city: Pittsburgh

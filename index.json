@@ -6879,13 +6879,23 @@
   "finishers": 3325,
   "finishers_year": 2025,
   "page": "https://p3r.org/races/eqt-10-miler",
-  "status": "unsupported",
-  "detail": "only googlemaps, image, pdf",
-  "found": [
-   "googlemaps",
-   "image",
-   "pdf"
-  ]
+  "status": "ok",
+  "detail": "manual map",
+  "file": "courses/pa/pittsburgh-10-miler/10-miler.gpx",
+  "source": {
+   "kind": "manual",
+   "url": "manual/pa/pittsburgh-10-miler/10-miler.gpx",
+   "page": "races.yaml"
+  },
+  "length_m": 16011.6,
+  "length_error_pct": -0.51,
+  "method": "line",
+  "oriented_by": "as-drawn",
+  "geometry_sha256": "bed8de5cc12f3971eb1bb87ea09e3cb677cd509e256f3337adbbd361adb011b8",
+  "pipeline": 2,
+  "retrieved": "2026-11-06",
+  "ascent_m": 64.3,
+  "descent_m": 62.7
  },
  {
   "race": "pittsburgh-10-miler",
@@ -6899,13 +6909,23 @@
   "finishers": 1155,
   "finishers_year": 2025,
   "page": "https://p3r.org/races/eqt-10-miler",
-  "status": "unsupported",
-  "detail": "only googlemaps, image, pdf",
-  "found": [
-   "googlemaps",
-   "image",
-   "pdf"
-  ]
+  "status": "ok",
+  "detail": "manual map",
+  "file": "courses/pa/pittsburgh-10-miler/10k.gpx",
+  "source": {
+   "kind": "manual",
+   "url": "manual/pa/pittsburgh-10-miler/10k.gpx",
+   "page": "races.yaml"
+  },
+  "length_m": 9918.4,
+  "length_error_pct": -0.82,
+  "method": "line",
+  "oriented_by": "as-drawn",
+  "geometry_sha256": "c0d93e6cd28f1e962757e5f129389b62e407fdddb8bb79da8dca3bea00799d33",
+  "pipeline": 2,
+  "retrieved": "2026-11-06",
+  "ascent_m": 33.8,
+  "descent_m": 32.8
  },
  {
   "race": "pittsburgh-great-race",

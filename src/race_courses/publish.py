@@ -97,7 +97,7 @@ def coverage_markdown(entries: list[dict], day: date) -> str:
             "",
             "## Not covered yet",
             "",
-            "A hand-traced GPX in `manual/` can cover any of these; see the README.",
+            "A traced GPX in `manual/` can cover any of these; see the README.",
             "",
             "| State | Race | Event | Status | Detail |",
             "| --- | --- | --- | --- | --- |",

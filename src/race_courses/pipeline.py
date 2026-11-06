@@ -136,7 +136,7 @@ def explicit_refs(event: Event) -> list[SourceRef]:
     if event.source is None:
         return []
     if event.source.startswith("manual/"):
-        return [SourceRef(kind="manual", url=event.source, found_on="races.yaml", label="hand-traced")]
+        return [SourceRef(kind="manual", url=event.source, found_on="races.yaml", label="traced")]
     ref = discover.source_ref(event.source, found_on="races.yaml")
     return [ref or SourceRef(kind="file", url=event.source, found_on="races.yaml")]
 
@@ -212,7 +212,7 @@ def published_entry(
     ascent, descent = gain_loss(points)
     title = f"{race.name} – {event.name}"
     if best.ref.kind == "manual":
-        description = f"Hand-traced course ({best.ref.url})."
+        description = f"Traced course ({best.ref.url}); manual/README.md says how it was traced."
     else:
         description = f"Course line from the organizer's map at {best.ref.url}, read {context.day.isoformat()}."
     description += (
