@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="race-courses tests" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata><name>Example Marathon</name></metadata>
+  <wpt lat="40.4406" lon="-79.9959"><ele>230.5</ele><name>Start</name></wpt>
+  <wpt lat="40.4420" lon="-79.9900"><name>Mile 1</name></wpt>
+  <rte>
+    <name>Lead vehicle route</name>
+    <rtept lat="40.4406" lon="-79.9959"><ele>230.5</ele></rtept>
+    <rtept lat="40.4410" lon="-79.9950"></rtept>
+  </rte>
+  <trk>
+    <name>Marathon</name>
+    <trkseg>
+      <trkpt lat="40.4406" lon="-79.9959"><ele>230.5</ele><time>2026-05-03T12:00:00Z</time></trkpt>
+      <trkpt lat="40.4408" lon="-79.9955"><ele>231.0</ele></trkpt>
+      <trkpt lat="40.4410" lon="-79.9950"><ele>231.5</ele></trkpt>
+    </trkseg>
+    <trkseg>
+      <trkpt lat="40.4412" lon="-79.9945"></trkpt>
+      <trkpt lat="40.4414" lon="-79.9940"></trkpt>
+    </trkseg>
+    <trkseg></trkseg>
+  </trk>
+  <trk>
+    <trkseg>
+      <trkpt lat="40.4500" lon="-80.0000"><ele>250</ele></trkpt>
+      <trkpt lat="40.4510" lon="-80.0010"><ele>251</ele></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

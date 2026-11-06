@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+<Document>
+  <name>Example Marathon</name>
+  <Folder>
+    <name>Course</name>
+    <Placemark>
+      <styleUrl>#line</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          -79.9959,40.4406,230.5
+          -79.9955,40.4408,231
+          -79.9950,40.4410,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Relay legs</name>
+      <MultiGeometry>
+        <LineString><coordinates>-79.99,40.44 -79.98,40.45</coordinates></LineString>
+        <LineString><coordinates>-79.98,40.45 -79.97,40.46</coordinates></LineString>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      <name>Recorded run</name>
+      <gx:Track>
+        <when>2026-05-03T12:00:00Z</when>
+        <when>2026-05-03T12:01:00Z</when>
+        <when>2026-05-03T12:02:00Z</when>
+        <gx:coord>-79.9959 40.4406 230.5</gx:coord>
+        <gx:coord/>
+        <gx:coord>-79.9950 40.4410 231</gx:coord>
+      </gx:Track>
+    </Placemark>
+  </Folder>
+  <Folder>
+    <name>Landmarks</name>
+    <Placemark>
+      <name>Start</name>
+      <Point><coordinates>-79.9959,40.4406,230.5</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <Point><coordinates>-79.9950,40.4410</coordinates></Point>
+    </Placemark>
+    <Placemark>
+      <name>Expo hall</name>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-80,40 -80,41 -79,41 -80,40</coordinates></LinearRing></outerBoundaryIs></Polygon>
+    </Placemark>
+  </Folder>
+</Document>
+</kml>

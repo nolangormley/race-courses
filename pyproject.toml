@@ -1,0 +1,29 @@
+[project]
+name = "race-courses"
+version = "0.1.0"
+description = "Weekly crawler that builds GPX files of large US road race courses"
+readme = "README.md"
+authors = [
+    { name = "Nolan Gormley", email = "nolangormley@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "defusedxml>=0.7.1",
+    "httpx>=0.28.1",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+race-courses = "race_courses.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,137 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-05T23:50:40Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "way",
+  "id": 11713124,
+  "bounds": {
+    "minlat": 40.4442438,
+    "minlon": -80.0038118,
+    "maxlat": 40.4468838,
+    "maxlon": -80.0028209
+  },
+  "nodes": [
+    683704712,
+    4484869183,
+    271197658
+  ],
+  "geometry": [
+    { "lat": 40.4442438, "lon": -80.0028209 },
+    { "lat": 40.4463520, "lon": -80.0036115 },
+    { "lat": 40.4468838, "lon": -80.0038118 }
+  ],
+  "tags": {
+    "bridge": "yes",
+    "cycleway": "track",
+    "cycleway:separation": "flex_post",
+    "highway": "secondary",
+    "lanes": "4",
+    "layer": "1",
+    "lcn": "yes",
+    "name": "Roberto Clemente Bridge",
+    "name:etymology:wikidata": "Q684020",
+    "old_name": "6th Street Bridge",
+    "ref:nhrp": "86000017",
+    "sidewalk:both": "separate",
+    "surface": "concrete",
+    "wikipedia": "en:Roberto Clemente Bridge"
+  }
+},
+{
+  "type": "way",
+  "id": 137770255,
+  "bounds": {
+    "minlat": 40.4443086,
+    "minlon": -80.0037179,
+    "maxlat": 40.4469014,
+    "maxlon": -80.0027431
+  },
+  "nodes": [
+    1510803793,
+    1510803763,
+    1510803765,
+    1510803791,
+    1510803778,
+    1510803781,
+    1510803759,
+    1510803754,
+    1510803757,
+    3582442099
+  ],
+  "geometry": [
+    { "lat": 40.4469014, "lon": -80.0037179 },
+    { "lat": 40.4466174, "lon": -80.0036041 },
+    { "lat": 40.4464312, "lon": -80.0035365 },
+    { "lat": 40.4460985, "lon": -80.0034105 },
+    { "lat": 40.4457209, "lon": -80.0032656 },
+    { "lat": 40.4453912, "lon": -80.0031449 },
+    { "lat": 40.4452351, "lon": -80.0030846 },
+    { "lat": 40.4449013, "lon": -80.0029612 },
+    { "lat": 40.4446013, "lon": -80.0028472 },
+    { "lat": 40.4443086, "lon": -80.0027431 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "bridge": "yes",
+    "foot": "yes",
+    "footway": "sidewalk",
+    "highway": "footway",
+    "layer": "1",
+    "lit": "yes",
+    "name": "Roberto Clemente Bridge",
+    "name:etymology:wikidata": "Q684020",
+    "old_name": "6th Street Bridge",
+    "surface": "concrete",
+    "wikipedia": "en:Roberto Clemente Bridge"
+  }
+},
+{
+  "type": "way",
+  "id": 137770257,
+  "bounds": {
+    "minlat": 40.4443923,
+    "minlon": -80.0038989,
+    "maxlat": 40.4468579,
+    "maxlon": -80.0029799
+  },
+  "nodes": [
+    1510787478,
+    1510803764,
+    1510803755,
+    1510803770,
+    1510803790,
+    1510803773,
+    1510803753
+  ],
+  "geometry": [
+    { "lat": 40.4443923, "lon": -80.0029799 },
+    { "lat": 40.4449166, "lon": -80.0031744 },
+    { "lat": 40.4452014, "lon": -80.0032804 },
+    { "lat": 40.4456851, "lon": -80.0034601 },
+    { "lat": 40.4459934, "lon": -80.0035727 },
+    { "lat": 40.4464037, "lon": -80.0037310 },
+    { "lat": 40.4468579, "lon": -80.0038989 }
+  ],
+  "tags": {
+    "bicycle": "yes",
+    "bridge": "yes",
+    "foot": "yes",
+    "highway": "footway",
+    "layer": "1",
+    "lit": "yes",
+    "name": "Roberto Clemente Bridge",
+    "name:etymology:wikidata": "Q684020",
+    "old_name": "6th Street Bridge",
+    "surface": "concrete",
+    "wikipedia": "en:Roberto Clemente Bridge"
+  }
+}
+
+  ]
+}

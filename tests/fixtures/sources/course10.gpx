@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<gpx version="1.0" creator="old tool" xmlns="http://www.topografix.com/GPX/1/0">
+  <name>Old export</name>
+  <wpt lat="33.7490" lon="-84.3880"><name>Peachtree start</name></wpt>
+  <rte>
+    <name>Course</name>
+    <rtept lat="33.7490" lon="-84.3880"><ele>320</ele></rtept>
+    <rtept lat="33.7500" lon="-84.3870"/>
+  </rte>
+  <trk>
+    <name>10K</name>
+    <trkseg>
+      <trkpt lat="33.7490" lon="-84.3880"><ele>320</ele></trkpt>
+      <trkpt lat="33.7500" lon="-84.3870"><ele>322</ele></trkpt>
+    </trkseg>
+  </trk>
+</gpx>

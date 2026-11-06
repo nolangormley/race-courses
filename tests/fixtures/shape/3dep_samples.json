@@ -1,0 +1,46 @@
+{
+ "samples": [
+  {
+   "location": {
+    "x": -80.03,
+    "y": 40.43,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "locationId": 0,
+   "value": "299.230834961",
+   "rasterId": 116340,
+   "resolution": 1
+  },
+  {
+   "location": {
+    "x": -80.02976,
+    "y": 40.43005,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "locationId": 1,
+   "value": "288.354125977",
+   "rasterId": 116340,
+   "resolution": 1
+  },
+  {
+   "location": {
+    "x": -80.02952,
+    "y": 40.4301,
+    "spatialReference": {
+     "wkid": 4326,
+     "latestWkid": 4326
+    }
+   },
+   "locationId": 2,
+   "value": "277.061859131",
+   "rasterId": 116340,
+   "resolution": 1
+  }
+ ]
+}

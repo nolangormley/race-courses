@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+  <Placemark>
+    <name>Half Marathon</name>
+    <LineString>
+      <coordinates>-93.265, 44.977, 260 -93.260, 44.980, 262 -93.255, 44.985, 265</coordinates>
+    </LineString>
+  </Placemark>
+  <Placemark>
+    <name>Finish</name>
+    <Point><coordinates>-93.255,44.985</coordinates></Point>
+  </Placemark>
+</Document>
+</kml>
