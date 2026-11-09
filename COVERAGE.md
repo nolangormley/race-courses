@@ -1,18 +1,18 @@
 # Coverage
 
-Weekly crawl of 2026-11-06: 294 races, 464 events, 55 courses published (12%).
+Weekly crawl of 2026-11-09: 294 races, 464 events, 55 courses published (12%).
 
 | Status | Events | Meaning |
 | --- | ---: | --- |
 | ok | 45 | Course found; length within 3% of the race distance. |
 | warn | 10 | Course found; check it (length within 8%, or joined from part of a larger map). |
-| unsupported | 339 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
+| unsupported | 340 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
 | no-source | 31 | No course map found on the organizer's site. |
 | no-match | 20 | Maps found, but no line matches the race distance. |
 | reject | 3 | A line matches, but it failed a check. |
-| error | 16 | The site could not be read (robots.txt, blocked, or down). |
+| error | 15 | The site could not be read (robots.txt, blocked, or down). |
 
-Map types on pages without a readable course: image 276, pdf 209, googlemaps 79, mapmyrun 39, ridewithgps 13, plotaroute 13, garmin 12, strava 5, arcgis 1, onthegomap 1.
+Map types on pages without a readable course: image 276, pdf 209, googlemaps 79, mapmyrun 40, ridewithgps 13, plotaroute 13, garmin 12, strava 5, arcgis 1, onthegomap 1.
 
 ## Not covered yet
 
@@ -304,7 +304,7 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | OH | [Nationwide Children's Hospital Columbus Marathon & 1/2 Marathon](https://www.columbusmarathon.com/1-2-marathon) | Half Marathon | unsupported | only image, pdf |
 | OH | [Nationwide Children's Hospital Columbus Marathon & 1/2 Marathon](https://www.columbusmarathon.com/jesseowens5k) | Jesse Owens 5K | unsupported | only image |
 | OH | [Nationwide Children's Hospital Columbus Marathon & 1/2 Marathon](https://www.columbusmarathon.com/marathon) | Marathon | unsupported | only image, pdf |
-| OH | [Chase Columbus Turkey Trot](https://www.columbusturkeytrot.com/) | 5 Miler | error | HTTP 522: https://www.columbusturkeytrot.com/ |
+| OH | [Chase Columbus Turkey Trot](https://www.columbusturkeytrot.com/) | 5 Miler | unsupported | only mapmyrun |
 | OH | [Dave's Turkey Chase 5K](https://runtoledo.com/turkey-chase-course-guide/) | 5K | unsupported | only image |
 | OH | [Delaware Turkey Trot](https://runsignup.com/Race/OH/Delaware/DelawareTurkeyTrot) | 5K | unsupported | only googlemaps, image |
 | OH | [Flying Pig Marathon Weekend](https://flyingpigmarathon.com/flying-pig-marathon-weekend/event/10k) | 10K | no-match | no line near 10.00 km in https://www.google.com/maps/d/kml?mid=1gaQGU9ApEWwlynJzdobaq2Uy_AeIKMg&forcekml=1 |

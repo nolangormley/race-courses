@@ -6184,8 +6184,11 @@
   "finishers": 1957,
   "finishers_year": 2025,
   "page": "https://www.columbusturkeytrot.com/",
-  "status": "error",
-  "detail": "HTTP 522: https://www.columbusturkeytrot.com/"
+  "status": "unsupported",
+  "detail": "only mapmyrun",
+  "found": [
+   "mapmyrun"
+  ]
  },
  {
   "race": "daves-turkey-chase",
