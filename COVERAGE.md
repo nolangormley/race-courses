@@ -1,18 +1,18 @@
 # Coverage
 
-Weekly crawl of 2026-11-09: 294 races, 464 events, 55 courses published (12%).
+Weekly crawl of 2026-11-16: 294 races, 464 events, 55 courses published (12%).
 
 | Status | Events | Meaning |
 | --- | ---: | --- |
 | ok | 45 | Course found; length within 3% of the race distance. |
 | warn | 10 | Course found; check it (length within 8%, or joined from part of a larger map). |
-| unsupported | 340 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
-| no-source | 31 | No course map found on the organizer's site. |
+| unsupported | 341 | Only a map type the crawler cannot read (PDF, image, Strava, ...). |
+| no-source | 30 | No course map found on the organizer's site. |
 | no-match | 20 | Maps found, but no line matches the race distance. |
 | reject | 3 | A line matches, but it failed a check. |
 | error | 15 | The site could not be read (robots.txt, blocked, or down). |
 
-Map types on pages without a readable course: image 276, pdf 209, googlemaps 79, mapmyrun 40, ridewithgps 13, plotaroute 13, garmin 12, strava 5, arcgis 1, onthegomap 1.
+Map types on pages without a readable course: image 279, pdf 211, googlemaps 82, mapmyrun 40, plotaroute 13, ridewithgps 12, garmin 12, strava 5, arcgis 3, onthegomap 1.
 
 ## Not covered yet
 
@@ -212,7 +212,7 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | MN | [North Start (formerly Hot Dash)](https://www.tcmevents.org/alleventsandraces/hotdash) | 5K | no-source | no course map on https://www.tcmevents.org/alleventsandraces/hotdash |
 | MN | [Stars and Strides Minneapolis](https://www.minnesotarunningseries.com/starsandstridesminneapolis) | 5K | unsupported | only image |
 | MN | [Tonka Turkey Trot](https://www.minnetonkaschools.org/district/partners/booster/turkey-trot/map) | 5K | unsupported | only mapmyrun |
-| MN | [Turkey Trot St. Paul](https://www.minnesotarunningseries.com/turkey-trot-st-paul) | 10K | unsupported | only image |
+| MN | [Turkey Trot St. Paul](https://www.minnesotarunningseries.com/turkey-trot-st-paul) | 10K | no-source | no course map on https://www.minnesotarunningseries.com/turkey-trot-st-paul |
 | MN | [Medtronic Twin Cities Marathon](https://www.tcmevents.org/alleventsandraces/medtronictwincitiesmarathonweekend/medtronictwincitiesmarathon) | Marathon | unsupported | only image, pdf |
 | MN | [Medtronic Twin Cities Marathon](https://www.tcmevents.org/alleventsandraces/medtronictwincitiesmarathonweekend/tc10mile) | TC 10 Mile | unsupported | only googlemaps, image, pdf |
 | MN | [Medtronic Twin Cities Marathon](https://www.tcmevents.org/alleventsandraces/medtronictwincitiesmarathonweekend/tc10k) | TC 10K | unsupported | only image, pdf |
@@ -274,7 +274,7 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | NY | [Mastercard New York Mini 10K](https://www.nyrr.org/races-and-events/2026/mastercard-new-york-mini-10k-womens-race) | 10K | unsupported | only googlemaps |
 | NY | [United Airlines NYC Half](https://www.nyrr.org/races-and-events/2026/united-airlines-nyc-half) | Half Marathon | unsupported | only googlemaps |
 | NY | [Citizens Queens 10K](https://webassets.nyrr.org/nyrrwebsiteassets/CTZQNS26_MapCourse_051326_RD8.pdf) | 10K | unsupported | only googlemaps, pdf |
-| NY | [Race to Deliver 4M to Benefit God's Love We Deliver](https://www.nyrr.org/races-and-events/2026/race-to-deliver-4m-to-benefit-gods-love-we-deliver) | 4 Mile | unsupported | only googlemaps |
+| NY | [Race to Deliver 4M to Benefit God's Love We Deliver](https://www.nyrr.org/races-and-events/2026/race-to-deliver-4m-to-benefit-gods-love-we-deliver) | 4 Mile | unsupported | only googlemaps, pdf |
 | NY | [Fleet Feet Rochester Half Marathon](https://www.rochestermarathon.com/race-weekend/course-maps) | Half Marathon | unsupported | only image, mapmyrun |
 | NY | [Run as One 4M Presented by JPMorgan Chase](https://webassets.nyrr.org/nyrrwebsiteassets/RunAsOne26_MapRun_031126_RD3%201.pdf) | 4 Mile | unsupported | only googlemaps, pdf |
 | NY | [NYRR Staten Island Half](https://webassets.nyrr.org/nyrrwebsiteassets/SIH25_Map_092625_M2%201.pdf) | Half Marathon | unsupported | only googlemaps, pdf |
@@ -289,7 +289,7 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | OH | [Air Force Marathon](https://www.usafmarathon.com/course-maps/) | Half Marathon | unsupported | only image, pdf |
 | OH | [Air Force Marathon](https://www.usafmarathon.com/course-maps/) | Marathon | unsupported | only image, pdf |
 | OH | [FirstEnergy Akron Marathon, Half Marathon & Team Relay](https://akronmarathon.org/race-series/akron-marathon/) | Half Marathon | no-source | no course map on https://akronmarathon.org/race-series/akron-marathon/ |
-| OH | [The Karen P Nakon Turkey Dash](https://runsignup.com/Race/OH/Avon/NFTurkeyDash) | 5K | unsupported | only image, pdf, ridewithgps |
+| OH | [The Karen P Nakon Turkey Dash](https://runsignup.com/Race/OH/Avon/NFTurkeyDash) | 5K | unsupported | only googlemaps, image, pdf |
 | OH | [Bay Days 5 Miler](https://runsignup.com/Race/BayDays/Page/Course) | 5 Mile | unsupported | only googlemaps, image |
 | OH | [Bockfest 5K](https://flyingpigmarathon.com/tql-beer-series/event/bockfest-5k) | 5K | no-match | no line near 5.00 km in https://www.google.com/maps/d/kml?mid=1gaQGU9ApEWwlynJzdobaq2Uy_AeIKMg&forcekml=1 |
 | OH | [Americana Festival 5K](https://runsignup.com/Race/OH/Centerville/Americana5k) | 5K | unsupported | only mapmyrun |
@@ -350,8 +350,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | PA | [Richard S. Caliguiri City of Pittsburgh Great Race](https://www.rungreatrace.com/5K) | 5K | unsupported | only googlemaps, pdf |
 | PA | [DICK'S Sporting Goods Pittsburgh Marathon](https://p3r.org/sites/page.json?slug=course-information&site=pittsburgh-marathon) | 5K | reject | length 4.56 km is -8.7% off target |
 | PA | [DICK'S Sporting Goods Pittsburgh Marathon](https://p3r.org/sites/page.json?slug=course-information&site=pittsburgh-marathon) | Marathon | no-match | no line near 42.20 km in https://www.google.com/maps/d/kml?mid=1zNDVBDOG5pguR_iRjNkCqyzaJfOAKV4&forcekml=1 |
-| PA | [YMCA of Greater Pittsburgh Turkey Trot](https://p3r.org/races/ymca-turkey-trot) | 5 Mile | unsupported | only pdf |
-| PA | [YMCA of Greater Pittsburgh Turkey Trot](https://p3r.org/races/ymca-turkey-trot) | 5K | unsupported | only pdf |
+| PA | [YMCA of Greater Pittsburgh Turkey Trot](https://p3r.org/races/ymca-turkey-trot) | 5 Mile | unsupported | only googlemaps, pdf |
+| PA | [YMCA of Greater Pittsburgh Turkey Trot](https://p3r.org/races/ymca-turkey-trot) | 5K | unsupported | only googlemaps, pdf |
 | PA | [Rocky Run](https://rockyrun.com/info/) | 10 Mile | unsupported | only image |
 | PA | [Rocky Run](https://rockyrun.com/info/) | 5K | unsupported | only image |
 | PA | [Run for the Diamonds](https://www.runfordiamonds.com/course-map) | 9 Mile | unsupported | only image |
@@ -362,8 +362,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | RI | [Rhode Island Half Marathon & 5K](https://runsignup.com/Race/RIHalf5K/Page-2) | Half Marathon | unsupported | only image, mapmyrun |
 | SC | [Turkey Day Run & Gobble Wobble 5K](https://www.turkeydayrun.com/race-details/) | 5K | unsupported | only image |
 | SC | [Cooper River Bridge Run](https://bridgerun.com/maps-2/) | 10K | unsupported | only image, pdf |
-| SC | [TreesUpstate Turkey Day Run](https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k) | 5K Run & Walk | unsupported | only pdf, ridewithgps |
-| SC | [TreesUpstate Turkey Day Run](https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k) | 8K | unsupported | only pdf, ridewithgps |
+| SC | [TreesUpstate Turkey Day Run](https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k) | 5K Run & Walk | unsupported | only arcgis, image, pdf, ridewithgps |
+| SC | [TreesUpstate Turkey Day Run](https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k) | 8K | unsupported | only arcgis, image, pdf, ridewithgps |
 | SC | [Kiawah Island Marathon](https://kiawahresort.com/recreation/kiawah-island-marathon/course/) | Half Marathon | unsupported | only image, pdf |
 | SC | [Kiawah Island Marathon](https://kiawahresort.com/recreation/kiawah-island-marathon/course/) | Marathon | unsupported | only image, pdf |
 | SC | [Myrtle Beach Marathon](https://mbmarathon.com/maps-elevevations/) | 5K | no-match | no line near 5.00 km in https://www.google.com/maps/d/kml?mid=15ZriaUQfoVwDKTJ26nqD9cjKvZkKHso&forcekml=1 |
@@ -406,7 +406,7 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | VA | [YMCA Turkey Trot (Fredericksburg)](https://runsignup.com/Race/AnnualYMCATurkeyTrotVA/Page/Course-Maps) | 5K | unsupported | only googlemaps, image, pdf |
 | VA | [Marine Corps Marathon](https://www.marinemarathon.com/events/marine-corps-marathon) | Marathon | unsupported | only image, pdf |
 | VA | [Ukrop's Monument Avenue 10K](https://www.sportsbackers.org/event/ukrops-monument-avenue-10k/10k-course/) | 10K | unsupported | only googlemaps, image, mapmyrun, pdf, ridewithgps |
-| VA | [Chartway Norfolk Harbor Half Marathon Weekend](https://norfolkharborhalf.com/5k/) | 5K | unsupported | only image |
+| VA | [Chartway Norfolk Harbor Half Marathon Weekend](https://norfolkharborhalf.com/5k/) | 5K | unsupported | only image, pdf |
 | VA | [Chartway Norfolk Harbor Half Marathon Weekend](https://norfolkharborhalf.com/half-marathon/) | Half Marathon | unsupported | only image, pdf |
 | VA | [Allianz Richmond Marathon](https://www.richmondmarathon.org/race-weekend/course-information/8k-course/) | 8K | unsupported | only image, pdf, ridewithgps |
 | VA | [Allianz Richmond Marathon](https://www.richmondmarathon.org/race-weekend/course-information/half-marathon-course/) | Half Marathon | unsupported | only image, pdf, ridewithgps |
@@ -422,8 +422,8 @@ A traced GPX in `manual/` can cover any of these; see the README.
 | VA | [Wicked 10K Weekend](https://wicked10k.com/5k/) | 5K | unsupported | only image, pdf |
 | VT | [Half Marathon Unplugged](https://www.runvermont.org/half-marathon-unplugged/course-map/) | Half Marathon | unsupported | only image |
 | VT | [M&T Bank Vermont City Marathon](https://www.runvermont.org/vermont-city-marathon-relay/course-map/) | Marathon | unsupported | only image, pdf |
-| WA | [UW Medicine Seattle Marathon](https://www.seattlemarathon.org/) | Half Marathon | no-source | no course map on https://www.seattlemarathon.org/ |
-| WA | [UW Medicine Seattle Marathon](https://www.seattlemarathon.org/) | Marathon | no-source | no course map on https://www.seattlemarathon.org/ |
+| WA | [UW Medicine Seattle Marathon](https://www.seattlemarathon.org/) | Half Marathon | unsupported | only image |
+| WA | [UW Medicine Seattle Marathon](https://www.seattlemarathon.org/) | Marathon | unsupported | only image |
 | WA | [St. Patrick's Day Dash](https://stpatsdash.com/race-info/) | 5K | unsupported | only pdf |
 | WI | [Bellin Run](https://www.bellinrun.com/event-information) | 10K | no-source | no course map on https://www.bellinrun.com/, https://www.bellinrun.com/event-information, https://www.bellinrun.com/results-records/course-records |
 | WI | [Bellin Run](https://www.bellinrun.com/event-information) | 5K | no-source | no course map on https://www.bellinrun.com/, https://www.bellinrun.com/event-information, https://www.bellinrun.com/results-records/course-records |

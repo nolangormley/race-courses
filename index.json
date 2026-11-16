@@ -3023,22 +3023,22 @@
   "finishers_year": 2025,
   "page": "https://www.baa.org/races/boston-marathon/the-course/",
   "status": "ok",
-  "detail": "joined from 262 of 264 pieces of the map",
+  "detail": "joined from 261 of 263 pieces of the map",
   "file": "courses/ma/boston-marathon/marathon.gpx",
   "source": {
    "kind": "osm",
    "url": "https://www.openstreetmap.org/relation/11680552",
    "page": "races.yaml"
   },
-  "length_m": 42228.6,
+  "length_m": 42228.5,
   "length_error_pct": 0.08,
-  "method": "chain:262/264",
+  "method": "chain:261/263",
   "oriented_by": "markers",
-  "geometry_sha256": "57320aa7c6a103c7c759aa85198cf84d06eaadbad0e58fdb6935b85da2869f8e",
+  "geometry_sha256": "ff2feedc8498ead86079d89ceed54e26f64c0161a3bd6c0aafb871e87c037105",
   "pipeline": 2,
-  "retrieved": "2026-11-06",
-  "ascent_m": 257.8,
-  "descent_m": 396.5
+  "retrieved": "2026-11-16",
+  "ascent_m": 257.3,
+  "descent_m": 396.0
  },
  {
   "race": "boston-run-to-remember",
@@ -4089,11 +4089,8 @@
   "finishers": 1316,
   "finishers_year": 2025,
   "page": "https://www.minnesotarunningseries.com/turkey-trot-st-paul",
-  "status": "unsupported",
-  "detail": "only image",
-  "found": [
-   "image"
-  ]
+  "status": "no-source",
+  "detail": "no course map on https://www.minnesotarunningseries.com/turkey-trot-st-paul"
  },
  {
   "race": "twin-cities-marathon",
@@ -5382,9 +5379,10 @@
   "finishers_year": 2024,
   "page": "https://www.nyrr.org/races-and-events/2026/race-to-deliver-4m-to-benefit-gods-love-we-deliver",
   "status": "unsupported",
-  "detail": "only googlemaps",
+  "detail": "only googlemaps, pdf",
   "found": [
-   "googlemaps"
+   "googlemaps",
+   "pdf"
   ]
  },
  {
@@ -5783,11 +5781,11 @@
   "finishers_year": 2025,
   "page": "https://runsignup.com/Race/OH/Avon/NFTurkeyDash",
   "status": "unsupported",
-  "detail": "only image, pdf, ridewithgps",
+  "detail": "only googlemaps, image, pdf",
   "found": [
+   "googlemaps",
    "image",
-   "pdf",
-   "ridewithgps"
+   "pdf"
   ]
  },
  {
@@ -7223,8 +7221,9 @@
   "finishers_year": 2025,
   "page": "https://p3r.org/races/ymca-turkey-trot",
   "status": "unsupported",
-  "detail": "only pdf",
+  "detail": "only googlemaps, pdf",
   "found": [
+   "googlemaps",
    "pdf"
   ]
  },
@@ -7241,8 +7240,9 @@
   "finishers_year": 2025,
   "page": "https://p3r.org/races/ymca-turkey-trot",
   "status": "unsupported",
-  "detail": "only pdf",
+  "detail": "only googlemaps, pdf",
   "found": [
+   "googlemaps",
    "pdf"
   ]
  },
@@ -7526,8 +7526,10 @@
   "finishers_year": 2025,
   "page": "https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k",
   "status": "unsupported",
-  "detail": "only pdf, ridewithgps",
+  "detail": "only arcgis, image, pdf, ridewithgps",
   "found": [
+   "arcgis",
+   "image",
    "pdf",
    "ridewithgps"
   ]
@@ -7545,8 +7547,10 @@
   "finishers_year": 2025,
   "page": "https://runsignup.com/Race/SC/Greenville/TreesGreenvilleTurkeyDay8k",
   "status": "unsupported",
-  "detail": "only pdf, ridewithgps",
+  "detail": "only arcgis, image, pdf, ridewithgps",
   "found": [
+   "arcgis",
+   "image",
    "pdf",
    "ridewithgps"
   ]
@@ -8653,9 +8657,10 @@
   "finishers_year": 2025,
   "page": "https://norfolkharborhalf.com/5k/",
   "status": "unsupported",
-  "detail": "only image",
+  "detail": "only image, pdf",
   "found": [
-   "image"
+   "image",
+   "pdf"
   ]
  },
  {
@@ -9017,8 +9022,11 @@
   "finishers": 4632,
   "finishers_year": 2025,
   "page": "https://www.seattlemarathon.org/",
-  "status": "no-source",
-  "detail": "no course map on https://www.seattlemarathon.org/"
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "seattle-marathon",
@@ -9032,8 +9040,11 @@
   "finishers": 2470,
   "finishers_year": 2025,
   "page": "https://www.seattlemarathon.org/",
-  "status": "no-source",
-  "detail": "no course map on https://www.seattlemarathon.org/"
+  "status": "unsupported",
+  "detail": "only image",
+  "found": [
+   "image"
+  ]
  },
  {
   "race": "st-patricks-day-dash-seattle",
